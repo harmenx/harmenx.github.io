@@ -11,9 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-
+    
+       
+        <link rel="stylesheet" href="style/style.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -23,14 +23,19 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>
+                <ul id="scene" data-friction-x="0.03"
+  data-friction-y="0.05">
+  <li class="layer" id="specks" data-depth="0.1"></li>
+  <li class="layer" id="layer-1" data-depth="0.15">
+    <div class="img" id="img-1"></div>
+  </li>
+  <li class="layer" id="layer-2" data-depth="0.25">
+    <div class="img" id="img-2"></div>
+  </li>
+  <li class="layer" id="layer-3" data-depth="0.45">
+    <div class="img" id="img-3"></div>
+  </li>
+</ul>
             </header>
         </div>
 
