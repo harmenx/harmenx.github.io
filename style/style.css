@@ -1,13 +1,25 @@
+@font-face {
+    font-family: ProximaNovaThin;
+    src: url(../fonts/ProximaNovaThin.ttf);
+  }
+
 html {
-    background: linear-gradient(135deg, #2B7594 0%, #655900 100%);
-    fixed;
-    overflow: hidden;
-    font-family: 'Orbitron', sans-serif;
-  }
+    background: #000;
   
-  li {
-      list-style-type: none;
+    overflow: hidden;
+    font-family: 'ProximaNovaThin';
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+  .scene li  {
+   
+        list-style-type: none;
+    
   }
+
   
   
   #range {
@@ -21,7 +33,7 @@ html {
   #specks {
     position: absolute;
     z-index: 999;
-    height: 100vh;
+    height: 300px;
     width: 100vw;
   }
   
@@ -49,21 +61,21 @@ html {
   
   #img-1 {
     opacity: 0.25;
-    background: url('https://image.ibb.co/jcTvpv/dust1.jpg');
+    background: url('../img/dust1.jpg');
     background-repeat: repeat;
     animation-duration: 600s;
   }
   
   #img-2 {
     opacity: 0.2;
-    background: url('https://image.ibb.co/goU1Uv/dust2.jpg');
+    background: url('../img/dust2.jpg');
     background-repeat: repeat;
     animation-duration: 450s;
   }
   
   #img-3 {
     opacity: 0.15;
-    background: url('https://image.ibb.co/cymRwa/dust3.jpg');
+    background: url('../img/dust3.jpg');
     background-repeat: repeat;
     animation-duration: 350s;
   }
@@ -97,13 +109,6 @@ html {
   }
 
 
-  /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -151,22 +156,12 @@ textarea {
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
 
 .wrapper {
     width: 90%;
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
 
 .header-container {
     border-bottom: 20px solid #e44d26;
@@ -248,12 +243,6 @@ nav a:hover {
 .ie7 .title {
     padding-top: 20px;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
 
 
 
