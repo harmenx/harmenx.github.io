@@ -7,13 +7,13 @@
 }
 @font-face {
     font-family: 'ProximaNovaThin';
-    src: url("../harmenx.github.io/fonts/ProximaNovaThin.ttf"); }
+    src: url("./fonts/ProximaNovaThin.ttf"); }
   @font-face {
     font-family: 'ProximaNovaSemibold';
-    src: url("../fonts/ProximaNovaSemibold.ttf"); }
+    src: url("./fonts/ProximaNovaSemibold.ttf"); }
   @font-face {
     font-family: 'ProximaNovaBold';
-    src: url("../fonts/ProximaNovaBold.ttf"); }
+    src: url("./fonts/ProximaNovaBold.ttf"); }
   @keyframes fadeIn {
     100% {
       opacity: 1; } }
