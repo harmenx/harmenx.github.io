@@ -659,7 +659,18 @@ canvas.addEventListener('touchstart', (e) => {
         pointers[i].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
     }
 });
+function addSplat(){
+    for (let i = 0; i < 10; i++) {
+       
+        pointers.push(new pointerPrototype());
 
+        pointers[i].id = i;
+        pointers[i].down = true;
+        pointers[i].x = Math.random() * 800;
+        pointers[i].y = Math.random() * 600;
+        pointers[i].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
+    }
+}
 window.addEventListener('mouseup', () => {
     pointers[0].down = false;
 });

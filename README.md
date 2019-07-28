@@ -1,5 +1,5 @@
-Home - Intro + Parallax
-CV - 
-Projects - 
-Skills - 
-Contact - 
+To do -
+Fill out Profile
+CV?
+Several Projects
+icons
