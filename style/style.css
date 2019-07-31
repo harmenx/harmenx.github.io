@@ -5,6 +5,9 @@
   position: absolute;
 
 }
+#cv{
+  padding:0px;
+}
 
 .skillIcon img {
   width: 100px;
