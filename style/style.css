@@ -837,48 +837,48 @@ section#portfolio #gallery .mix:nth-child(1) .card {
 }
 
 
-section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
-  background: url("./img/thumb-2.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(2) .card {
+  background: url("../img/thumb-2.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
-  background: url("./img/thumb-3.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(3) .card {
+  background: url("../img/thumb-3.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
-  background: url("./img/thumb-4.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(4) .card {
+  background: url("../img/thumb-4.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
-  background: url("./img/thumb-5.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(5) .card {
+  background: url("../img/thumb-5.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
-  background: url("./img/thumb-6.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(6) .card {
+  background: url("../img/thumb-6.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
-  background: url("./img/thumb-7.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(7) .card {
+  background: url("../img/thumb-7.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
-  background: url("./img/thumb-8.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(8) .card {
+  background: url("../img/thumb-8.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
-  background: url("./img/thumb-9.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(9) .card {
+  background: url("../img/thumb-9.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
-  background: url("./img/thumb-10.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(10) .card {
+  background: url("../img/thumb-10.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
-  background: url("./img/thumb-11.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(11) .card {
+  background: url("../img/thumb-11.jpg") center center/cover;
 }
 
-section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
-  background: url("./img/thumb-12.jpg") center center/cover;
+section#portfolio #gallery .mix:nth-child(12) .card {
+  background: url("../img/thumb-12.jpg") center center/cover;
 }
 
 section#portfolio #gallery .mix .card {
@@ -1162,7 +1162,7 @@ footer .footnote .highlight {
 }
 
 @media screen and (max-width: 400px) {
-  section:nth-of-type(3) #gallery .mix .card {
+  section#portfolio #gallery .mix .card {
     width: 100vw;
   }
 }
@@ -1322,17 +1322,17 @@ footer .footnote .highlight {
     font-size: 40pt;
   }
 
-  section:nth-of-type(3) .filter {
+  section#portfolio .filter {
     font-size: 11pt;
     margin: 0 15px;
     padding: 0 30px;
   }
 
-  section:nth-of-type(3) .float-bar {
+  section#portfolio .float-bar {
     height: 30px;
   }
 
-  section:nth-of-type(3) #gallery .mix .card {
+  section#portfolio #gallery .mix .card {
     height: 300px;
   }
 
@@ -1481,11 +1481,11 @@ footer .footnote .highlight {
     height: intial;
   }
 
-  section:nth-of-type(3) #gallery .mix .card {
+  section#portfolio #gallery .mix .card {
     width: 390px;
   }
 
-  section:nth-of-type(3) .filter {
+  section#portfolio .filter {
     font-size: 13pt;
     padding: 0 40px;
     margin: 0 25px;
