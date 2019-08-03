@@ -839,11 +839,11 @@ section#portfolio #gallery .mix:nth-child(1) .card {
 
 
 section#portfolio #gallery .mix:nth-child(2) .card {
-  background: url("../img/thumb-2.jpg") center center/cover;
+  background: url("../img/thumb-2.png") center center/cover;
 }
 
 section#portfolio #gallery .mix:nth-child(3) .card {
-  background: url("../img/thumb-3.jpg") center center/cover;
+  background: url("../img/thumb-3.png") center center/cover;
 }
 
 section#portfolio #gallery .mix:nth-child(4) .card {
