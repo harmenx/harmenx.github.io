@@ -735,6 +735,7 @@ section:nth-of-type(2) .bar span {
 }
 section#cv {
   background: #f5f5f5;
+  padding: 50px;
 }
 
 
