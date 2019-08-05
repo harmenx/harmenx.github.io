@@ -15,18 +15,28 @@ $secondary-dark: #C51675;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-Regular.ttf');
+  font-family: 'ProximaNovaThin';
+  src: url("./fonts/ProximaNovaThin.ttf");
 }
 
 @font-face {
-  font-family: 'Raleway-semibold';
-  src: url('../fonts/Raleway-SemiBold.ttf');
+  font-family: 'ProximaNovaSemibold';
+  src: url("./fonts/ProximaNovaSemibold.ttf");
 }
 
 @font-face {
-  font-family: 'Raleway-bold';
-  src: url('../fonts/Raleway-Bold.ttf');
+  font-family: 'ProximaNovaBold';
+  src: url("./fonts/ProximaNovaBold.ttf");
+}
+#canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.skillIcon img {
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes fadeIn {
