@@ -189,7 +189,6 @@ body {
   left: 0;
   width: 100vw;
   height: 100%;
-  background: url('../img/filler.png') center center/cover;
 }
 
 .button {
@@ -690,7 +689,7 @@ section {
   }
 
   //PORTFOLIO
-  &:nth-of-type(3) {
+  &#portfolio {
     background: #f5f5f5;
 
     .container {
@@ -1063,7 +1062,7 @@ footer {
 
 // BREAKS
 @media screen and (max-width: 400px) {
-  section:nth-of-type(3) {
+  section#portfolio {
     #gallery .mix .card {
       width: 100vw;
     }
@@ -1237,7 +1236,7 @@ footer {
     }
 
     // PORTFOLIO
-    &:nth-of-type(3) {
+    &#portfolio {
 
       .filter {
         font-size: 11pt;
@@ -1388,7 +1387,7 @@ footer {
       }
     }
 
-    &:nth-of-type(3) {
+    &#portfolio {
       #gallery .mix .card {
         width: 390px;
       }
