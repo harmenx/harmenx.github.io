@@ -410,7 +410,7 @@ section {
     padding: 0 10px;
     background: #000;
     color: #fff;
-    height: calc(100vh + 53px); }
+    height: calc(100vh); }
     section#home .highlight {
       font-family: 'ProximaNovaSemibold'; }
     section#home .text {
@@ -827,7 +827,10 @@ footer {
     background: none;
     overflow: visible;
     height: initial;
-    text-align: left; }
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 400px; }
     nav .link-wrap .visible {
       height: initial; }
     nav .link-wrap div {

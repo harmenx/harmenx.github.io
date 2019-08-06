@@ -536,7 +536,7 @@ section {
     padding: 0 10px;
     background: #000;
     color: #fff;
-    height: calc(100vh + 53px);
+    height: calc(100vh);
 
     .highlight {
       font-family: 'ProximaNovaSemibold';
@@ -1127,7 +1127,11 @@ footer {
       overflow: visible;
       height: initial;
       text-align: left;
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
 
+      
       .visible {
         height: initial;
       }
