@@ -775,9 +775,8 @@ footer {
     animation: toBottomFromTop 0.3s forwards; }
   footer .footnote {
     font-size: 10pt;
-    color: #8F9AA7;
-    margin-top: 35px;
-    opacity: 0.6; }
+    color: #fff;
+    margin-top: 35px; }
     footer .footnote .highlight {
       font-family: 'Open Sans';
       color: #E31B6D; }
