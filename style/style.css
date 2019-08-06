@@ -223,7 +223,6 @@ nav {
   height: 50px;
   width: 100%;
   background: #1B242F;
-  border-bottom: 3px solid #04C2C9;
   text-align: left;
   z-index: 99; }
   nav.fixed {
@@ -408,32 +407,33 @@ section {
     padding: 0 10px;
     width: 100%;
     box-sizing: border-box; }
-  section:nth-of-type(1) {
+  section#home {
     padding: 0 10px;
+    background: #000;
     color: #fff;
     height: calc(100vh + 53px); }
-    section:nth-of-type(1) .highlight {
+    section#home .highlight {
       font-family: 'ProximaNovaSemibold'; }
-    section:nth-of-type(1) .text {
+    section#home .text {
       margin: 0 0 20px 0;
       font-size: 16pt;
       line-height: 20pt;
       z-index: 1;
       pointer-events: none; }
-    section:nth-of-type(1) .hexagon {
+    section#home .hexagon {
       transition: transform .9s ease-in-out; }
-      section:nth-of-type(1) .hexagon:hover {
+      section#home .hexagon:hover {
         transform: rotate(540deg); }
-    section:nth-of-type(1) .button {
+    section#home .button {
       padding: 12px 40px 12px 15px;
       position: relative;
       margin-bottom: 53px; }
-      section:nth-of-type(1) .button .mdi {
+      section#home .button .mdi {
         transition: transform .3s;
         position: absolute;
         right: 15px;
         top: 11px; }
-      section:nth-of-type(1) .button:hover .mdi {
+      section#home .button:hover .mdi {
         transform: rotate(90deg); }
   section:nth-of-type(2) .label-wrap .label {
     margin: 20px 0 10px 0; }
