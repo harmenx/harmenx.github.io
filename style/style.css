@@ -222,7 +222,6 @@ nav {
   position: absolute;
   height: 50px;
   width: 100%;
-  background: #1B242F;
   text-align: left;
   z-index: 99; }
   nav.fixed {
@@ -744,24 +743,10 @@ section {
       cursor: pointer; }
 
 footer {
-  background: #1B242F;
-  padding: 70px 0 50px 0;
-  position: relative; }
-  footer .mdi-chevron-double-up {
-    position: absolute;
-    top: -25px;
-    background: #E31B6D;
-    font-size: 30pt;
-    width: 47px;
-    height: 50px;
-    line-height: 40pt;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: background .5s; }
-    footer .mdi-chevron-double-up:hover {
-      background: #fb1f79; }
+  position: fixed;
+  height: 100px;
+  bottom: 20px;
+  width: 100%; }
   footer .icon-wrap .icon {
     overflow: hidden;
     transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;

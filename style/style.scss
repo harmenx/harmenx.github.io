@@ -299,7 +299,6 @@ nav {
   @include pos($left: 0, $bottom: 0);
   height: 50px;
   width: 100%;
-  background: $primary-darkest;
   text-align: left;
   z-index: 99;
 
@@ -984,27 +983,12 @@ section {
 }
 
 footer {
-  background: $primary-darkest;
-  padding: 70px 0 50px 0;
-  position: relative;
 
-  .mdi-chevron-double-up {
-    position: absolute;
-    top: -25px;
-    background: $secondary;
-    font-size: 30pt;
-    width: 47px;
-    height: 50px;
-    line-height: 40pt;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: background .5s;
-    &:hover {
-      background: $secondary-light;
-    }
-  }
+  position: fixed;
+  height: 100px;
+  bottom: 20px;
+  width: 100%;
+ 
 
   .icon-wrap {
     .icon {
