@@ -108,7 +108,7 @@ a {
 
 body {
   color: #fff;
-  font-family: 'Raleway';
+  font-family: 'ProximaNovaThin';
   text-align: center;
   margin: 0px;
   font-size: 8pt;
@@ -147,7 +147,7 @@ body {
     vertical-align: middle; }
 
 .bold {
-  font-family: 'Raleway-bold'; }
+  font-family: 'ProximaNovaBold'; }
 
 .flex {
   display: flex;
@@ -197,7 +197,7 @@ body {
 
 .header {
   font-size: 25pt;
-  font-family: 'raleway-bold';
+  font-family: 'ProximaNovaBold';
   position: relative;
   color: #444649;
   position: relative; }
@@ -350,12 +350,12 @@ nav {
   .modal-wrap .title {
     font-size: 16pt;
     line-height: 20pt;
-    font-family: 'Raleway-bold'; }
+    font-family: 'ProximaNovaBold'; }
   .modal-wrap .tag {
     display: block;
     font-weight: 300;
     color: #c0c0c0;
-    font-family: 'Raleway-bold';
+    font-family: 'ProximaNovaBold';
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 15px;
     font-size: 8pt; }
@@ -413,7 +413,7 @@ section {
     color: #fff;
     height: calc(100vh + 53px); }
     section:nth-of-type(1) .highlight {
-      font-family: 'Raleway-semibold'; }
+      font-family: 'ProximaNovaSemibold'; }
     section:nth-of-type(1) .text {
       margin: 0 0 20px 0;
       font-size: 16pt;
