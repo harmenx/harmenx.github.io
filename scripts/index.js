@@ -48,7 +48,6 @@ $(function() {
     // Link Highlighting
     if (pos2 > $('#home').offset().top)       { highlightLink('home'); }
     if (pos2 > $('#profile').offset().top)      { highlightLink('profile'); }
-    if (pos2 > $('#cv').offset().top)  { highlightLink('cv'); }
     if (pos2 > $('#portfolio').offset().top)       { highlightLink('portfolio'); }
     if (pos2 > $('#contact').offset().top ||
         pos + $(window).height() === $(document).height()) {
