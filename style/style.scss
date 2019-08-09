@@ -532,7 +532,7 @@ section {
   }
 
   //HOME
-  &#home {
+  & {
     padding: 0 10px;
     background: #000;
     color: #fff;
@@ -1350,7 +1350,8 @@ footer {
 
   section {
     // ABOUT
-    &:nth-of-type(2) {
+    &#profile {
+      background: #000;
       .bars-wrap {
         margin: 0 0 0 0;
       }

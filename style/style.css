@@ -406,33 +406,33 @@ section {
     padding: 0 10px;
     width: 100%;
     box-sizing: border-box; }
-  section#home {
+  section {
     padding: 0 10px;
     background: #000;
     color: #fff;
     height: calc(100vh); }
-    section#home .highlight {
+    section .highlight {
       font-family: 'ProximaNovaSemibold'; }
-    section#home .text {
+    section .text {
       margin: 0 0 20px 0;
       font-size: 16pt;
       line-height: 20pt;
       z-index: 1;
       pointer-events: none; }
-    section#home .hexagon {
+    section .hexagon {
       transition: transform .9s ease-in-out; }
-      section#home .hexagon:hover {
+      section .hexagon:hover {
         transform: rotate(540deg); }
-    section#home .button {
+    section .button {
       padding: 12px 40px 12px 15px;
       position: relative;
       margin-bottom: 53px; }
-      section#home .button .mdi {
+      section .button .mdi {
         transition: transform .3s;
         position: absolute;
         right: 15px;
         top: 11px; }
-      section#home .button:hover .mdi {
+      section .button:hover .mdi {
         transform: rotate(90deg); }
   section:nth-of-type(2) .label-wrap .label {
     margin: 20px 0 10px 0; }
@@ -950,18 +950,20 @@ footer {
     max-width: 50%;
     max-height: 100%;
     box-sizing: border-box; }
-  section:nth-of-type(2) .bars-wrap {
-    margin: 0 0 0 0; }
-  section:nth-of-type(2) .skills-wrapper {
-    margin: 50px 0 0 0; }
-    section:nth-of-type(2) .skills-wrapper .me {
-      margin: 0; }
-  section:nth-of-type(2) .bar {
-    max-width: 90%; }
-  section:nth-of-type(2) .bullet-wrap {
-    margin: 0;
-    padding: 0 10px;
-    height: intial; }
+  section#profile {
+    background: #000; }
+    section#profile .bars-wrap {
+      margin: 0 0 0 0; }
+    section#profile .skills-wrapper {
+      margin: 50px 0 0 0; }
+      section#profile .skills-wrapper .me {
+        margin: 0; }
+    section#profile .bar {
+      max-width: 90%; }
+    section#profile .bullet-wrap {
+      margin: 0;
+      padding: 0 10px;
+      height: intial; }
   section#portfolio #gallery .mix .card {
     width: 390px; }
   section#portfolio .filter {
