@@ -843,8 +843,7 @@ footer {
   nav .mdi-menu {
     display: none; }
   section {
-    line-height: 18pt;
-    padding: 100px 0 130px 0; }
+    line-height: 18pt; }
     section .container {
       padding: 0 10px; }
     section:nth-of-type(1) .text {
