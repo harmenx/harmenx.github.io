@@ -85,28 +85,6 @@ $(function() {
     $('.blog-wrap').removeClass('fade');
   });
 
-  posFilterBar($('.filter').first());
-
-  $('.filter').click(function(){
-    posFilterBar(this);
-  });
-
-  function posFilterBar(elem) {
-    var origin = $(elem).parent().offset().left;
-    var pos = $(elem).offset().left;
-    $('.float-bar').css({
-      left: pos - origin,
-      width: $(elem).innerWidth()
-    });
-    $('.float-bar .row').css('left', (pos - origin) * -1);
-  }
-
-  // GALLERY
-  $('#gallery').mixItUp({ });
-
-  function mixClear() {
-    setTimeout(function() { $('#gallery').removeClass('waypoint') }, 2000);
-  }
 
   // SCROLL ANIMATIONS
   function onScrollInit( items, elemTrigger ) {
