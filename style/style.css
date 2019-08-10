@@ -16,8 +16,8 @@
   position: absolute; }
 
 .skillIcon img {
-  width: 100px;
-  height: 100px; }
+  width: 80px;
+  height: 80px; }
 
 @keyframes fadeIn {
   100% {
@@ -845,7 +845,8 @@ footer {
   section {
     line-height: 18pt; }
     section .container {
-      padding: 0 10px; }
+      padding: 0 10px;
+      height: 100%; }
     section:nth-of-type(1) .text {
       font-size: 32pt;
       line-height: 36pt; }
@@ -962,7 +963,7 @@ footer {
       max-width: 90%; }
     section#profile .bullet-wrap {
       margin: 0;
-      padding: 0 10px;
+      padding: 10px;
       height: intial; }
   section#portfolio #gallery .mix .card {
     width: 390px; }

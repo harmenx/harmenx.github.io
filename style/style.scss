@@ -35,8 +35,8 @@ $secondary-dark: #C51675;
 }
 
 .skillIcon img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 @keyframes fadeIn {
@@ -1156,6 +1156,7 @@ footer {
 
     .container {
       padding: 0 10px;
+      height:100%;
     }
 
     // HOME
@@ -1369,7 +1370,7 @@ footer {
 
       .bullet-wrap {
         margin: 0;
-        padding: 0 10px;
+        padding: 10px;
         height: intial;
       }
     }
