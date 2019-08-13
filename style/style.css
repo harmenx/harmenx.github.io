@@ -1,3 +1,15 @@
+section#profile {
+  display: none; }
+
+section#contact {
+  display: none; }
+
+section#portfolio {
+  display: none; }
+
+.hidden {
+  display: none !important; }
+
 @font-face {
   font-family: 'ProximaNovaThin';
   src: url("./fonts/ProximaNovaThin.ttf"); }
@@ -107,6 +119,7 @@ a {
   color: inherit; }
 
 body {
+  background: #000;
   color: #fff;
   font-family: 'ProximaNovaThin';
   text-align: center;

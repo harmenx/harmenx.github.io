@@ -47,18 +47,30 @@ $(function() {
     $("nav").find('[dest="' + anchor + '"]').addClass('active');
   }
 
-
+ 
   // EVENT HANDLERS
   $('.page-link').click(function() {
     var anchor = $(this).attr("dest");
     $('.link-wrap').removeClass('visible');
 
     $('nav span').removeClass('active');
-    $("nav").find('[dest="'+ anchor +'"]').addClass('active');
+    $('section#home').addClass('hidden');
+    $('section#portfolio').addClass('hidden');
+    $('section#contact').addClass('hidden');
+    $('section#profile').addClass('hidden');
+    console.log(anchor);
+    if(anchor === "home"){
+      $('section#home').removeClass('hidden');
+    }else if(anchor === "profile"){
 
-    $('html, body').animate({
-      scrollTop: $('#' + anchor).offset().top
-    }, 400);
+      $('section#profile').removeClass('hidden');
+     
+    }else if(anchor === "portfolio"){
+      $('section#portfolio').removeClass('hidden');
+
+    }else {
+      $('section#contact').removeClass('hidden');
+    }
   });
 
   $('.mdi-menu').click(function() {
