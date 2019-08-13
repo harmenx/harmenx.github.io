@@ -11,10 +11,7 @@ $(function() {
    })
   }
 
-  // RESIZE RESETS
-  $(window).resize(function(){
-    posFilterBar($('.filter').first());
-  });
+
 
   // Sticky Nav on Mobile
   if (isMobile) {
@@ -32,16 +29,7 @@ $(function() {
   $(window).on('scroll', function () {
 
     var pos = $(window).scrollTop();
-    var pos2 = pos + 50;
-
-    // Link Highlighting
-    if (pos2 > $('#home').offset().top)       { highlightLink('home'); }
-    if (pos2 > $('#profile').offset().top)      { highlightLink('profile'); }
-    if (pos2 > $('#portfolio').offset().top)       { highlightLink('portfolio'); }
-    if (pos2 > $('#contact').offset().top ||
-        pos + $(window).height() === $(document).height()) {
-          highlightLink('contact');
-    }
+ 
 
     // Prevent Hover on Scroll
     clearTimeout(lockTimer);
@@ -134,3 +122,6 @@ $(function() {
   })
 
 });
+
+
+
