@@ -1,12 +1,4 @@
-section#profile{
-  display:none;
-}
-section#contact{
-  display:none;
-}
-section#portfolio{
-  display:none;
-}
+
 .hidden{
   display:none !important;
 }
@@ -15,7 +7,7 @@ $primary: #04C2C9;
 $primary-dark: #00A1A7;
 $primary-darker: #036367;
 $primary-darkest: #1B242F;
-$secondary: #E31B6D;
+$secondary: rgb(0, 56, 209);
 $secondary-light: #fb1f79;
 $secondary-dark: #C51675;
 

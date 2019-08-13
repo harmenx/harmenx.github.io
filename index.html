@@ -35,25 +35,7 @@
 <body>
   <div class="overflow-wrap">
 
-    <!-- HOME -->
-    <div class="modal-wrap flex">
-      <div class="mask"></div>
-      <div class="modal" id="modal">
-        <div class="carousel-wrap">
-          <div class="window">
-            <div id="carousel">
-              <div class="slide"></div>
-              <div class="slide"></div>
-              <div class="slide"></div>
-            </div>
-            <i class="mdi mdi-chevron-left" id="prev"></i>
-            <i class="mdi mdi-chevron-right" id="next"></i>
-          </div>
-
-        </div>
-        <i class="close mdi mdi-close"></i>
-      </div>
-    </div>
+ 
     <nav class="flex fixed">
       <div class="link-wrap">
         <div class="active page-link" dest="home">Home</div>
@@ -71,7 +53,12 @@
         <div class="text">
           <span class="highlight">Machina Hero</span>
           <br>
-          Full Stack Web Development
+          <span
+               class="txt-rotate"
+               data-period="100"
+               data-rotate='[ "Full Stack Web Developer", "DevOps Engineer", "Blockchain Developer", "Pentester" ]'>
+          </span>
+         
         </div>
         <a class="button page-link" href="profile">View my work <i class="mdi mdi-arrow-right"></i></a>
 
@@ -81,7 +68,7 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section class="flex" id="portfolio">
+    <section id="portfolio" class="hidden">
      
 
       <div class="portfolio">
@@ -178,7 +165,7 @@
           </a></div>
       </div>
     </section>
-    <section id="profile">
+    <section id="profile" class="hidden">
       <div class="container flex">
 
         <div class="flex row label-wrap">
@@ -290,7 +277,7 @@
       </div>
     </section>
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" class="hidden">
       
       <div id="form-main">
         <div id="form-div">

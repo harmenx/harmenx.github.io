@@ -1,12 +1,3 @@
-section#profile {
-  display: none; }
-
-section#contact {
-  display: none; }
-
-section#portfolio {
-  display: none; }
-
 .hidden {
   display: none !important; }
 
@@ -206,7 +197,7 @@ body {
   transform: rotateZ(-60deg); }
 
 .highlight {
-  color: #E31B6D; }
+  color: #0038d1; }
 
 .header {
   font-size: 25pt;
@@ -264,7 +255,7 @@ nav {
       nav .link-wrap div:first-child {
         padding: 25px 20px 12px 20px; }
       nav .link-wrap div:hover {
-        color: #E31B6D; }
+        color: #0038d1; }
   nav .mdi-menu {
     position: absolute;
     right: 5vw;
@@ -273,7 +264,7 @@ nav {
     line-height: 36pt;
     top: 0; }
   nav .active {
-    color: #E31B6D; }
+    color: #0038d1; }
 
 .carousel-wrap {
   position: relative;
@@ -383,7 +374,7 @@ nav {
     font-size: 10pt;
     transition: all .5s;
     cursor: pointer;
-    background: #E31B6D;
+    background: #0038d1;
     color: #fff;
     font-weight: 600;
     border: 0;
@@ -396,7 +387,7 @@ nav {
       pointer-events: initial;
       visibility: visible; }
     .modal-wrap .button:hover {
-      color: #E31B6D;
+      color: #0038d1;
       background: #fff; }
   .modal-wrap .carousel {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25); }
@@ -528,7 +519,7 @@ section {
     section:nth-of-type(2) .bar.secondary {
       background-color: #C51675; }
       section:nth-of-type(2) .bar.secondary .tag {
-        background-color: #E31B6D; }
+        background-color: #0038d1; }
     section:nth-of-type(2) .bar span {
       z-index: 1;
       padding: 0 15px 0 0; }
@@ -554,7 +545,7 @@ section {
       overflow: hidden;
       height: 25px;
       border-radius: 1px;
-      background: #E31B6D;
+      background: #0038d1;
       transition: all .5s ease-in-out; }
       section#portfolio .float-bar .row {
         top: 0;
@@ -586,7 +577,7 @@ section {
         bottom: 0;
         left: 0;
         position: absolute;
-        border: 2px solid #E31B6D;
+        border: 2px solid #0038d1;
         width: 170px;
         margin: 0 auto;
         font-size: 13pt;
@@ -596,7 +587,7 @@ section {
         section#portfolio #gallery .mix .waypoint {
           background: #fff; }
         section#portfolio #gallery .mix .button:hover {
-          background: #E31B6D;
+          background: #0038d1;
           color: #fff; }
         section#portfolio #gallery .mix:nth-child(1) .card {
           background: url("../img/thumb-1.jpg") center center/cover; }
@@ -792,7 +783,7 @@ footer {
     margin-top: 35px; }
     footer .footnote .highlight {
       font-family: 'Open Sans';
-      color: #E31B6D; }
+      color: #0038d1; }
 
 @media screen and (max-width: 400px) {
   section#portfolio #gallery .mix .card {
