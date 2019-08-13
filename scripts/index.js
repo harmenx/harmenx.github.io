@@ -193,3 +193,11 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+
+$("#contact-button").click(function(event){
+  event.preventDefault();
+
+$('contactForm').fadeOut(500);
+$('.contactWrapper').addClass('form-success');
+});
