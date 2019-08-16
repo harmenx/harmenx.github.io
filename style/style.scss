@@ -1985,7 +1985,7 @@ body :-ms-input-placeholder {
   color: white;
   font-weight: 300;
 }
-.wrapper {
+.contactWrapper {
   position: absolute;
   top: 50%;
   left: 0;
@@ -1994,7 +1994,7 @@ body :-ms-input-placeholder {
   margin-top: -200px;
   overflow: hidden;
 }
-.wrapper.form-success .container h1 {
+.contactWrapper.form-success .container h1 {
   -webkit-transform: translateY(85px);
           transform: translateY(85px);
 }
@@ -2006,7 +2006,7 @@ body :-ms-input-placeholder {
   text-align: center;
 }
 .container h1 {
-  font-size: 40px;
+  font-size: 22px;
   transition-duration: 1s;
   transition-timing-function: ease-in-put;
   font-weight: 200;

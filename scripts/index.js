@@ -1,14 +1,14 @@
-$(function() {
+$(function () {
 
   var isMobile;
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-   isMobile = true;
+    isMobile = true;
 
-   // Mobile height fix
-   $('.height-fix').each(function(){
-    var h = $(this).height();
-    $(this).height(h)
-   })
+    // Mobile height fix
+    $('.height-fix').each(function () {
+      var h = $(this).height();
+      $(this).height(h)
+    })
   }
 
 
@@ -29,15 +29,15 @@ $(function() {
   $(window).on('scroll', function () {
 
     var pos = $(window).scrollTop();
- 
+
 
     // Prevent Hover on Scroll
     clearTimeout(lockTimer);
-    if(!$('body').hasClass('disable-hover')) {
+    if (!$('body').hasClass('disable-hover')) {
       $('body').addClass('disable-hover')
     }
 
-    lockTimer = setTimeout(function(){
+    lockTimer = setTimeout(function () {
       $('body').removeClass('disable-hover')
     }, 500);
   });
@@ -47,9 +47,9 @@ $(function() {
     $("nav").find('[dest="' + anchor + '"]').addClass('active');
   }
 
- 
+
   // EVENT HANDLERS
-  $('.page-link').click(function() {
+  $('.page-link').click(function () {
     var anchor = $(this).attr("dest");
     $('.link-wrap').removeClass('visible');
 
@@ -60,84 +60,69 @@ $(function() {
     $('section#profile').addClass('hidden');
     console.log(anchor);
     highlightLink('anchor')
-    if(anchor === "home"){
+    if (anchor === "home") {
       $('section#home').removeClass('hidden');
-    }else if(anchor === "profile"){
+    } else if (anchor === "profile") {
 
       $('section#profile').removeClass('hidden');
-     
-    }else if(anchor === "portfolio"){
+
+    } else if (anchor === "portfolio") {
       $('section#portfolio').removeClass('hidden');
 
-    }else {
+    } else {
       $('section#contact').removeClass('hidden');
     }
   });
 
-  $('.mdi-menu').click(function() {
+  $('.mdi-menu').click(function () {
     $('.link-wrap').toggleClass('visible');
   });
 
-  $('.blog-wrap').hover(  function() {
+  $('.blog-wrap').hover(function () {
     $('.blog-wrap').not(this).addClass('fade');
-    $( this ).addClass( "hover" );
-  }, function() {
-    $( this ).removeClass( "hover" );
+    $(this).addClass("hover");
+  }, function () {
+    $(this).removeClass("hover");
     $('.blog-wrap').removeClass('fade');
   });
 
 
   // SCROLL ANIMATIONS
-  function onScrollInit( items, elemTrigger ) {
+  function onScrollInit(items, elemTrigger) {
     var offset = $(window).height() / 1.6
-    items.each( function() {
+    items.each(function () {
       var elem = $(this),
-          animationClass = elem.attr('data-animation'),
-          animationDelay = elem.attr('data-delay');
+        animationClass = elem.attr('data-animation'),
+        animationDelay = elem.attr('data-delay');
 
-          elem.css({
-            '-webkit-animation-delay':  animationDelay,
-            '-moz-animation-delay':     animationDelay,
-            'animation-delay':          animationDelay
-          });
+      elem.css({
+        '-webkit-animation-delay': animationDelay,
+        '-moz-animation-delay': animationDelay,
+        'animation-delay': animationDelay
+      });
 
-          var trigger = (elemTrigger) ? trigger : elem;
+      var trigger = (elemTrigger) ? trigger : elem;
 
-          trigger.waypoint(function() {
-            elem.addClass('animated').addClass(animationClass);
-            if (elem.get(0).id === 'gallery') mixClear(); //OPTIONAL
-            },{
-                triggerOnce: true,
-                offset: offset
-          });
+      trigger.waypoint(function () {
+        elem.addClass('animated').addClass(animationClass);
+        if (elem.get(0).id === 'gallery') mixClear(); //OPTIONAL
+      }, {
+          triggerOnce: true,
+          offset: offset
+        });
     });
   }
 
-  setTimeout(function() { onScrollInit($('.waypoint')) }, 10);
+  setTimeout(function () { onScrollInit($('.waypoint')) }, 10);
 
-  // CONTACT FORM
-  $('#contact-form').submit(function(e) {
-    e.preventDefault();
-
-      $.ajax({
-          url: "https://formspree.io/harmen@consultant.com",
-          method: "POST",
-          data: { message: $('form').serialize() },
-          dataType: "json"
-      }).done(function(response) {
-          $('#success').addClass('expand');
-          $('#contact-form').find("input[type=text], input[type=email], textarea").val("");
-      });
-  });
-
-  $('#close').click(function() {
+  $('#close').click(function () {
     $('#success').removeClass('expand');
   })
 
 });
 
 
-var TxtRotate = function(el, toRotate, period) {
+var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -147,7 +132,7 @@ var TxtRotate = function(el, toRotate, period) {
   this.isDeleting = false;
 };
 
-TxtRotate.prototype.tick = function() {
+TxtRotate.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
@@ -157,7 +142,7 @@ TxtRotate.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
   var that = this;
   var delta = 300 - Math.random() * 100;
@@ -173,14 +158,14 @@ TxtRotate.prototype.tick = function() {
     delta = 500;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     that.tick();
   }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
   var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
+  for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');
     var period = elements[i].getAttribute('data-period');
     if (toRotate) {
@@ -192,11 +177,22 @@ window.onload = function() {
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
-  $("#contact-button").click(function(event){
-    console.log("CLICK");
+  $("#contact-button").click(function (event) {
+
     event.preventDefault();
-    $('contactForm').fadeOut(500);
+    $('form').fadeOut(500);
     $('.contactWrapper').addClass('form-success');
+    $('.contactWrapper h1').html('Thank you!');
+
+    $.ajax({
+      url: "https://formspree.io/harmen@machinahero.com",
+      method: "POST",
+      data: { message: $('form').serialize() },
+      dataType: "json"
+    }).done(function (response) {
+      $('#success').addClass('expand');
+      $('#contact-form').find("input[type=text], input[type=email], textarea").val("");
+    });
   });
 };
 
