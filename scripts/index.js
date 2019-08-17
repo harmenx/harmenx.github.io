@@ -185,7 +185,7 @@ window.onload = function () {
     $('.contactWrapper h1').html('Thank you!');
 
     $.ajax({
-      url: "https://formspree.io/harmen@machinahero.com",
+      url: "https://formcarry.com/s/VNlNBJYI8hO",
       method: "POST",
       data: { message: $('form').serialize() },
       dataType: "json"
