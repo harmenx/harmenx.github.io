@@ -12,17 +12,6 @@ $(function () {
   }
 
 
-
-  // Sticky Nav on Mobile
-  if (isMobile) {
-    $('nav').addClass('fixed');
-  } else {
-    $('nav').addClass('desk');
-  }
-
-
-
-
   function highlightLink(anchor) {
     $('nav .active').removeClass('active');
     $("nav").find('[dest="' + anchor + '"]').addClass('active');
@@ -39,7 +28,7 @@ $(function () {
     $('section#portfolio').addClass('hidden');
     $('section#contact').addClass('hidden');
     $('section#profile').addClass('hidden');
-    console.log(anchor);
+
     highlightLink(anchor);
     if (anchor === "home") {
       $('section#home').removeClass('hidden');
@@ -59,13 +48,7 @@ $(function () {
     $('.link-wrap').toggleClass('visible');
   });
 
-  $('.blog-wrap').hover(function () {
-    $('.blog-wrap').not(this).addClass('fade');
-    $(this).addClass("hover");
-  }, function () {
-    $(this).removeClass("hover");
-    $('.blog-wrap').removeClass('fade');
-  });
+
 
 
   // SCROLL ANIMATIONS
