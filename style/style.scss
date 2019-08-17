@@ -7,7 +7,7 @@ $primary: #04C2C9;
 $primary-dark: #00A1A7;
 $primary-darker: #036367;
 $primary-darkest: #1B242F;
-$secondary: rgb(0, 56, 209);
+$secondary: #6ed097;
 $secondary-light: #fb1f79;
 $secondary-dark: #C51675;
 
@@ -865,7 +865,6 @@ section {
 
     .date {
       font-size: 7pt;
-      font-family: 'Open sans';
       margin: 5px 0 0 0;
     }
 
@@ -1032,7 +1031,6 @@ footer {
     margin-top: 35px;
 
     .highlight {
-      font-family: 'Open Sans';
       color: $secondary;
     }
   }

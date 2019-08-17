@@ -21,26 +21,7 @@ $(function () {
   }
 
 
-  // NAV POSITION
-  var navPos = $('nav').position().top;
-  var lastPos = 0;
-  var lockTimer
 
-  $(window).on('scroll', function () {
-
-    var pos = $(window).scrollTop();
-
-
-    // Prevent Hover on Scroll
-    clearTimeout(lockTimer);
-    if (!$('body').hasClass('disable-hover')) {
-      $('body').addClass('disable-hover')
-    }
-
-    lockTimer = setTimeout(function () {
-      $('body').removeClass('disable-hover')
-    }, 500);
-  });
 
   function highlightLink(anchor) {
     $('nav .active').removeClass('active');
@@ -59,7 +40,7 @@ $(function () {
     $('section#contact').addClass('hidden');
     $('section#profile').addClass('hidden');
     console.log(anchor);
-    highlightLink('anchor')
+    highlightLink(anchor);
     if (anchor === "home") {
       $('section#home').removeClass('hidden');
     } else if (anchor === "profile") {

@@ -416,7 +416,7 @@ body {
 }
 
 .highlight {
-  color: #0038d1;
+  color: #6ed097;
 }
 
 .header {
@@ -496,7 +496,7 @@ nav .link-wrap div:first-child {
 }
 
 nav .link-wrap div:hover {
-  color: #0038d1;
+  color: #6ed097;
 }
 
 nav .mdi-menu {
@@ -509,7 +509,7 @@ nav .mdi-menu {
 }
 
 nav .active {
-  color: #0038d1;
+  color: #6ed097;
 }
 
 .carousel-wrap {
@@ -647,7 +647,7 @@ nav .active {
   -webkit-transition: all .5s;
   transition: all .5s;
   cursor: pointer;
-  background: #0038d1;
+  background: #6ed097;
   color: #fff;
   font-weight: 600;
   border: 0;
@@ -664,7 +664,7 @@ nav .active {
 }
 
 .modal-wrap .button:hover {
-  color: #0038d1;
+  color: #6ed097;
   background: #fff;
 }
 
@@ -902,7 +902,7 @@ section:nth-of-type(2) .bar.secondary {
 }
 
 section:nth-of-type(2) .bar.secondary .tag {
-  background-color: #0038d1;
+  background-color: #6ed097;
 }
 
 section:nth-of-type(2) .bar span {
@@ -939,7 +939,7 @@ section#portfolio .float-bar {
   overflow: hidden;
   height: 25px;
   border-radius: 1px;
-  background: #0038d1;
+  background: #6ed097;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -988,7 +988,7 @@ section#portfolio #gallery .button {
   bottom: 0;
   left: 0;
   position: absolute;
-  border: 2px solid #0038d1;
+  border: 2px solid #6ed097;
   width: 170px;
   margin: 0 auto;
   font-size: 13pt;
@@ -1004,7 +1004,7 @@ section#portfolio #gallery .mix .waypoint {
 }
 
 section#portfolio #gallery .mix .button:hover {
-  background: #0038d1;
+  background: #6ed097;
   color: #fff;
 }
 
@@ -1152,7 +1152,6 @@ section:nth-of-type(4) .thumb {
 
 section:nth-of-type(4) .date {
   font-size: 7pt;
-  font-family: 'Open sans';
   margin: 5px 0 0 0;
 }
 
@@ -1321,8 +1320,7 @@ footer .footnote {
 }
 
 footer .footnote .highlight {
-  font-family: 'Open Sans';
-  color: #0038d1;
+  color: #6ed097;
 }
 
 @media screen and (max-width: 400px) {
