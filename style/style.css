@@ -416,7 +416,7 @@ body {
 }
 
 .highlight {
-  color: #6ed097;
+  color: #006ac0;
 }
 
 .header {
@@ -496,7 +496,7 @@ nav .link-wrap div:first-child {
 }
 
 nav .link-wrap div:hover {
-  color: #6ed097;
+  color: #006ac0;
 }
 
 nav .mdi-menu {
@@ -509,7 +509,7 @@ nav .mdi-menu {
 }
 
 nav .active {
-  color: #6ed097;
+  color: #006ac0;
 }
 
 .carousel-wrap {
@@ -606,7 +606,7 @@ nav .active {
 }
 
 .modal-wrap .info-box {
-  border-top: 3px solid #1B242F;
+  border-top: 3px solid #005dce;
   padding: 15px 10px 85px 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -647,7 +647,7 @@ nav .active {
   -webkit-transition: all .5s;
   transition: all .5s;
   cursor: pointer;
-  background: #6ed097;
+  background: #006ac0;
   color: #fff;
   font-weight: 600;
   border: 0;
@@ -664,7 +664,7 @@ nav .active {
 }
 
 .modal-wrap .button:hover {
-  color: #6ed097;
+  color: #006ac0;
   background: #fff;
 }
 
@@ -902,7 +902,7 @@ section:nth-of-type(2) .bar.secondary {
 }
 
 section:nth-of-type(2) .bar.secondary .tag {
-  background-color: #6ed097;
+  background-color: #006ac0;
 }
 
 section:nth-of-type(2) .bar span {
@@ -939,7 +939,7 @@ section#portfolio .float-bar {
   overflow: hidden;
   height: 25px;
   border-radius: 1px;
-  background: #6ed097;
+  background: #006ac0;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -976,7 +976,7 @@ section#portfolio #gallery .text, section#portfolio #gallery .button {
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: #1B242F;
+  color: #005dce;
 }
 
 section#portfolio #gallery .text .bold, section#portfolio #gallery .button .bold {
@@ -988,7 +988,7 @@ section#portfolio #gallery .button {
   bottom: 0;
   left: 0;
   position: absolute;
-  border: 2px solid #6ed097;
+  border: 2px solid #006ac0;
   width: 170px;
   margin: 0 auto;
   font-size: 13pt;
@@ -1004,7 +1004,7 @@ section#portfolio #gallery .mix .waypoint {
 }
 
 section#portfolio #gallery .mix .button:hover {
-  background: #6ed097;
+  background: #006ac0;
   color: #fff;
 }
 
@@ -1320,7 +1320,7 @@ footer .footnote {
 }
 
 footer .footnote .highlight {
-  color: #6ed097;
+  color: #006ac0;
 }
 
 @media screen and (max-width: 400px) {
@@ -1959,7 +1959,7 @@ a {
 }
 
 #hero-slides #slides {
-  --slides-height: 76vh;
+  --slides-height: 60vh;
   width: auto;
   height: var(--slides-height);
   padding: 0 10vw;
@@ -2062,9 +2062,11 @@ a {
   margin-bottom: 1.5em;
   -webkit-transition-delay: 60ms;
           transition-delay: 60ms;
+  color: #c10068;
 }
 
 #hero-slides #slides .slide .headline {
+  color: #c10068;
   font-size: 2.667em;
   font-weight: 900;
   -webkit-transition-delay: 50ms;
@@ -2309,7 +2311,7 @@ form input:hover {
 form input:focus {
   background-color: white;
   width: 300px;
-  color: #53e3a6;
+  color: #006ac0;
 }
 
 form button {
@@ -2320,7 +2322,7 @@ form button {
   background-color: white;
   border: 0;
   padding: 10px 15px;
-  color: #53e3a6;
+  color: #006ac0;
   border-radius: 3px;
   width: 250px;
   cursor: pointer;

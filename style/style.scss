@@ -6,11 +6,11 @@
 $primary: #04C2C9;
 $primary-dark: #00A1A7;
 $primary-darker: #036367;
-$primary-darkest: #1B242F;
-$secondary: #6ed097;
+$primary-darkest: rgb(0, 93, 206);
+$secondary: #006ac0;
 $secondary-light: #fb1f79;
 $secondary-dark: #C51675;
-
+$portfolio-text: #c10068;
 @mixin pos($pos: absolute, $top: null, $left: null, $bottom: null, $right: null) {
   top: $top;
   right: $right;
@@ -1735,7 +1735,7 @@ a {
 		}
 	}
 	#slides {
-		--slides-height: 76vh;
+		--slides-height: 60vh;
 		width: auto;
 		height: var(--slides-height);
 		padding: 0 10vw;
@@ -1822,9 +1822,11 @@ a {
 			.location {
 				font-weight: 100;
 				margin-bottom: 1.5em;
-				transition-delay: 60ms;
+        transition-delay: 60ms;
+        color: $portfolio-text;
 			}
 			.headline {
+        color: $portfolio-text;
 				font-size: 2.667em;
 				font-weight: 900;
 				transition-delay: 50ms;
@@ -2038,7 +2040,7 @@ form input:hover {
 form input:focus {
   background-color: white;
   width: 300px;
-  color: #53e3a6;
+  color: $secondary;
 }
 form button {
   -webkit-appearance: none;
@@ -2048,7 +2050,7 @@ form button {
   background-color: white;
   border: 0;
   padding: 10px 15px;
-  color: #53e3a6;
+  color: $secondary;
   border-radius: 3px;
   width: 250px;
   cursor: pointer;
