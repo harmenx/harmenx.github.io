@@ -1,22 +1,9 @@
 $(function () {
 
-  var isMobile;
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    isMobile = true;
-
-    // Mobile height fix
-    $('.height-fix').each(function () {
-      var h = $(this).height();
-      $(this).height(h)
-    })
-  }
-
-
   function highlightLink(anchor) {
     $('nav .active').removeClass('active');
     $("nav").find('[dest="' + anchor + '"]').addClass('active');
   }
-
 
   // EVENT HANDLERS
   $('.page-link').click(function () {
@@ -33,12 +20,9 @@ $(function () {
     if (anchor === "home") {
       $('section#home').removeClass('hidden');
     } else if (anchor === "profile") {
-
       $('section#profile').removeClass('hidden');
-
     } else if (anchor === "portfolio") {
       $('section#portfolio').removeClass('hidden');
-
     } else {
       $('section#contact').removeClass('hidden');
     }
@@ -47,37 +31,6 @@ $(function () {
   $('.mdi-menu').click(function () {
     $('.link-wrap').toggleClass('visible');
   });
-
-
-
-
-  // SCROLL ANIMATIONS
-  function onScrollInit(items, elemTrigger) {
-    var offset = $(window).height() / 1.6
-    items.each(function () {
-      var elem = $(this),
-        animationClass = elem.attr('data-animation'),
-        animationDelay = elem.attr('data-delay');
-
-      elem.css({
-        '-webkit-animation-delay': animationDelay,
-        '-moz-animation-delay': animationDelay,
-        'animation-delay': animationDelay
-      });
-
-      var trigger = (elemTrigger) ? trigger : elem;
-
-      trigger.waypoint(function () {
-        elem.addClass('animated').addClass(animationClass);
-        if (elem.get(0).id === 'gallery') mixClear(); //OPTIONAL
-      }, {
-          triggerOnce: true,
-          offset: offset
-        });
-    });
-  }
-
-  setTimeout(function () { onScrollInit($('.waypoint')) }, 10);
 
   $('#close').click(function () {
     $('#success').removeClass('expand');
