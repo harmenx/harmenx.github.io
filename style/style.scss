@@ -157,7 +157,6 @@ a {
   color: inherit;
 }
 
-
 body {
   background: #000;
   color: #fff;
@@ -1588,18 +1587,16 @@ a {
 	}
 	#slides-cont {
 		position: relative;
-		// overflow: hidden;
-		--button-height: 6vh;
+		--button-height: 2vh;
 		--button-spacing: 0.2vh;
 		
 		.button {
 			width: 5vw;
 			height: var(--button-height);
 			background: $accent-color;
-			// text-align: center;
 			position: absolute;
 			right: 5.375vw;
-			top: 38vh;
+			top: 30vh;
 			z-index: 100;
 			cursor: pointer;
 			
@@ -1647,7 +1644,7 @@ a {
 			}
 		}
 		#prev {
-			margin-top: var(--button-spacing);
+			margin-top: 5vh;
 			opacity: calc(var(--page) + 0.5);
 			transition: 500ms opacity;
 			
@@ -1900,39 +1897,13 @@ a {
 
 //contact
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-weight: 300;
-}
-body {
-  color: white;
-  font-weight: 300;
-}
-body ::-webkit-input-placeholder {
-  color: white;
-  font-weight: 300;
-}
-body :-moz-placeholder {
-  color: white;
-  opacity: 1;
-  font-weight: 300;
-}
-body ::-moz-placeholder {
-  color: white;
-  opacity: 1;
-  font-weight: 300;
-}
-body :-ms-input-placeholder {
-  color: white;
-  font-weight: 300;
-}
 .contactWrapper {
   position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
+ 
+  top: 35%;
+  left: 30%;
+
+  width: 40%;
   height: 400px;
   margin-top: -200px;
   overflow: hidden;
@@ -2031,7 +2002,7 @@ table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 60%;
   table-layout: fixed;
 }
 

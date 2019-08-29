@@ -12,7 +12,6 @@ let maxPageCount = () => slideCount / slidesPerPage() - 1;
 
 function goToPage(pageNumber = 0) {
 	currentPage = Math.min(maxPageCount(), Math.max(0, pageNumber));
-	console.log(currentPage);
 	hero.style.setProperty('--page', currentPage);
 }
 
