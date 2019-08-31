@@ -1713,24 +1713,6 @@ a {
           filter: saturate(0%) contrast(200%) brightness(200%) invert(100%);
 }
 
-@media (min-width: 1200px) and (max-width: 1699px) {
-  body {
-    --slides-per-page: 3;
-  }
-  #hero-slides #slides .slide {
-    font-size: 1vw;
-  }
-}
-
-@media (min-width: 1700px) {
-  body {
-    --slide-per-age: 4;
-  }
-  #hero-slides #slides .slide {
-    font-size: 0.75vw;
-  }
-}
-
 .contactWrapper {
   position: absolute;
   top: 35%;
@@ -1809,7 +1791,7 @@ form button {
   padding: 10px 15px;
   color: #006ac0;
   border-radius: 3px;
-  width: 250px;
+  width: 280px;
   cursor: pointer;
   font-size: 18px;
   -webkit-transition-duration: 0.25s;
@@ -1915,6 +1897,7 @@ body {
 .hex-wrap {
   height: 100px;
   width: 100px;
+  margin: auto;
 }
 
 .slide, .carousel-wrap {
@@ -2098,6 +2081,24 @@ section:nth-of-type(5) form {
 @media screen and (max-width: 400px) {
   section#portfolio #gallery .mix .card {
     width: 100vw;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1699px) {
+  body {
+    --slides-per-page: 3;
+  }
+  #hero-slides #slides .slide {
+    font-size: 1vw;
+  }
+}
+
+@media (min-width: 1700px) {
+  body {
+    --slide-per-age: 4;
+  }
+  #hero-slides #slides .slide {
+    font-size: 0.75vw;
   }
 }
 

@@ -26,6 +26,7 @@ $(function () {
     } else {
       $('section#contact').removeClass('hidden');
     }
+    slide(0,1);
   });
 
   $('.mdi-menu').click(function () {
@@ -38,6 +39,18 @@ $(function () {
 
 });
 
+function slide(current, target) {
+
+  $("section:section:nth-of-type("+current+")").animate({
+      left: '-150%'
+  }, 500, function() {
+      $(this).css('left', '150%');
+  });
+
+  $('section:section:nth-of-type('+target+')').next().animate({
+      left: '0'
+  }, 500);
+}
 
 var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
