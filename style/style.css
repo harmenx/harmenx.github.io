@@ -1940,6 +1940,11 @@ body {
   left: 25px;
 }
 
+.skillTable td:hover {
+  background: #006ac0;
+  border-radius: 5px;
+}
+
 nav .link-wrap {
   position: initial;
   background: none;

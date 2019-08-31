@@ -1641,6 +1641,10 @@ body {
     left: 25px;
   }
 }
+.skillTable td:hover{
+  background: $secondary;
+  border-radius:5px;
+}
 
 nav {
   .link-wrap {
