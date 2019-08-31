@@ -292,6 +292,11 @@ input, button {
   font-family: 'ProximaNovaThin';
 }
 
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color: white;
+}
+
 textarea {
   width: 100%;
   height: 150px;
@@ -728,6 +733,11 @@ section .button:hover .mdi {
           transform: rotate(90deg);
 }
 
+section:nth-of-type(2) {
+  -webkit-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+}
+
 section:nth-of-type(2) .label-wrap .label {
   margin: 20px 0 10px 0;
 }
@@ -885,8 +895,9 @@ section:nth-of-type(2) .bar span {
 
 section#portfolio {
   padding-top: 100px;
-  background: #000;
   color: white;
+  -webkit-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
 }
 
 section#portfolio .container {
@@ -1056,151 +1067,6 @@ section .flex-50-gt-sm {
   display: block;
 }
 
-section:nth-of-type(4) {
-  padding: 130px 0 100px 0;
-  text-align: left;
-}
-
-section:nth-of-type(4) .flex.row-gt-sm, section:nth-of-type(4) .flex.wrap {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-section:nth-of-type(4) .gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-section:nth-of-type(4) .label {
-  line-height: 14pt;
-  font-size: 12pt;
-  -webkit-transition: color .3s ease-in-out;
-  transition: color .3s ease-in-out;
-}
-
-section:nth-of-type(4) .thumb {
-  height: 150px;
-  margin: 0 0 15px 0;
-}
-
-section:nth-of-type(4) .date {
-  font-size: 7pt;
-  margin: 5px 0 0 0;
-}
-
-section:nth-of-type(4) .bar {
-  height: 3px;
-  width: 25%;
-  background: #04C2C9;
-  margin: 10px 0px;
-}
-
-section:nth-of-type(4) .text {
-  font-size: 9pt;
-  line-height: 13pt;
-  max-height: 85px;
-}
-
-section:nth-of-type(5) {
-  background: #252934;
-  color: #fff;
-  padding-top: 175px;
-}
-
-section:nth-of-type(5) .header {
-  color: #fff;
-}
-
-section:nth-of-type(5) .header-bar {
-  margin: 25px 0 40px 0;
-  background: #fff;
-  width: 110px;
-}
-
-section:nth-of-type(5) .highlight {
-  font-weight: 600;
-  color: #04C2C9;
-}
-
-section:nth-of-type(5) svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-section:nth-of-type(5) form {
-  margin: 40px auto 0 auto;
-  min-width: 95%;
-}
-
-section:nth-of-type(5) input[type="text"], section:nth-of-type(5) input[type="email"], section:nth-of-type(5) textarea {
-  display: block;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: none;
-  border: 0;
-  padding: 10px 15px;
-  background: #1E242C;
-  font-size: 12pt;
-  margin-bottom: 3px;
-  color: #fff;
-}
-
-section:nth-of-type(5) textarea {
-  min-height: 150px;
-  margin-bottom: 5px;
-}
-
-section:nth-of-type(5) .button {
-  float: right;
-  margin: 5px 0 0 0;
-  font-size: 12pt;
-  padding: 10px 30px;
-  color: #fff;
-  background: transparent;
-  outline: 0;
-}
-
-section:nth-of-type(5) .button:hover {
-  background: #04C2C9;
-}
-
-section:nth-of-type(5) #success {
-  height: 0;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: height .25s;
-  transition: height .25s;
-}
-
-section:nth-of-type(5) #success.expand {
-  height: 36px;
-}
-
-section:nth-of-type(5) #success div {
-  background: #04c986;
-  color: #157051;
-  font-size: 10pt;
-  font-weight: 600;
-  padding: 5px 0;
-  border: 1px solid #157c59;
-}
-
-section:nth-of-type(5) #close {
-  position: absolute;
-  padding: 5px 15px;
-  font-size: 12pt;
-  font-weight: 600;
-  right: 0;
-  cursor: pointer;
-}
-
 footer {
   position: fixed;
   height: 100px;
@@ -1265,11 +1131,6 @@ footer .footnote .highlight {
   border: #30aed6 solid 3px;
 }
 
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-  background-color: white;
-}
-
 #button-blue {
   float: left;
   width: 100%;
@@ -1307,28 +1168,12 @@ input:focus, textarea:focus {
   background-color: white;
 }
 
-@media only screen and (max-width: 580px) {
-  #form-div {
-    left: 3%;
-    margin-right: 3%;
-    width: 88%;
-    margin-left: 0;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-}
-
 .portfolio {
   --slides-per-page: 6;
   margin: 0;
   overflow: hidden;
   height: 60vh;
   color: white;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 #hero-slides {
@@ -1833,6 +1678,9 @@ form button:hover {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    font-size: 12pt;
+  }
   table {
     border: 0;
   }
@@ -1867,10 +1715,6 @@ form button:hover {
   table td:last-child {
     border-bottom: 0;
   }
-}
-
-body {
-  font-size: 12pt;
 }
 
 .container {
@@ -2051,17 +1895,17 @@ section:nth-of-type(2) .hexagon i {
   font-size: 40pt;
 }
 
-section#portfolio .filter {
+section:nth-of-type(3) .filter {
   font-size: 11pt;
   margin: 0 15px;
   padding: 0 30px;
 }
 
-section#portfolio .float-bar {
+section:nth-of-type(3) .float-bar {
   height: 30px;
 }
 
-section#portfolio #gallery .mix .card {
+section:nth-of-type(3) #gallery .mix .card {
   height: 220px;
 }
 

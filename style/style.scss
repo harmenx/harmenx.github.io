@@ -151,6 +151,10 @@ $curve: cubic-bezier(0.7, 0, 0.3, 1);
   }
 }
 
+
+
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -169,6 +173,10 @@ body {
 }
 input, button{
   font-family: 'ProximaNovaThin';
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
 }
 textarea {
 	width: 100%;
@@ -559,8 +567,12 @@ section {
     }
   }
 
-  //ABOUT
+  //PROFILE
   &:nth-of-type(2) {
+
+    -webkit-animation: slideIn 2s forwards;
+    -moz-animation: slideIn 2s forwards;
+    animation: slideIn 2s forwards;
 
     .label-wrap {
 
@@ -670,9 +682,13 @@ section {
 
   //PORTFOLIO
   &#portfolio {
+    
     padding-top: 100px;
-    background: #000;
     color:white;
+    -webkit-animation: slideIn 2s forwards;
+    -moz-animation: slideIn 2s forwards;
+    animation: slideIn 2s forwards;
+
     .container {
       padding: 0;
     }
@@ -790,147 +806,6 @@ section {
   .flex-50-gt-sm { display: block;}
 
 
-  //BLOG
-  &:nth-of-type(4) {
-    padding: 130px 0 100px 0;
-    text-align: left;
-
-    .flex.row-gt-sm, .flex.wrap {
-      align-items: flex-start;
-    }
-
-    .gradient {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-   
-
-    .label {
-      line-height: 14pt;
-      font-size: 12pt;
-      transition: color .3s ease-in-out;
-    }
-
-    .thumb {
-      height: 150px;
-      margin: 0 0 15px 0;
-    }
-
-    .date {
-      font-size: 7pt;
-      margin: 5px 0 0 0;
-    }
-
-    .bar {
-      height: 3px;
-      width: 25%;
-      background: $primary;
-      margin: 10px 0px;
-    }
-
-    .text {
-      font-size: 9pt;
-      line-height: 13pt;
-      max-height: 85px;
-    }
-  }
-
-  //CONTACT
-  &:nth-of-type(5) {
-    background: #252934;
-    color: #fff;
-    padding-top: 175px;
-
-    .header {
-      color: #fff;
-    }
-    .header-bar {
-      margin: 25px 0 40px 0;
-      background: #fff;
-      width: 110px;
-    }
-    .highlight {
-      font-weight: 600;
-      color: $primary;
-    }
-
-    svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    form {
-      margin: 40px auto 0 auto;
-      min-width: 95%;
-    }
-
-    input[type="text"], input[type="email"], textarea {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      outline: none;
-      border: 0;
-      padding: 10px 15px;
-      background: #1E242C;
-      font-size: 12pt;
-      margin-bottom: 3px;
-      color: #fff;
-    }
-
-    textarea {
-      min-height: 150px;
-      margin-bottom: 5px;
-    }
-
-    .button {
-      float: right;
-      margin: 5px 0 0 0;
-      font-size: 12pt;
-      padding: 10px 30px;
-      color: #fff;
-      background: transparent;
-      outline: 0;
-
-      &:hover {
-        background: $primary;
-      }
-    }
-
-    #success {
-      height: 0;
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-      transition: height .25s;
-
-      &.expand {
-        height: 36px;
-      }
-
-      div {
-        background: #04c986;
-        color: #157051;
-        font-size: 10pt;
-        font-weight: 600;
-        padding: 5px 0;
-        border: 1px solid #157c59;
-      }
-    }
-
-    #close {
-      position: absolute;
-      padding: 5px 15px;
-      font-size: 12pt;
-      font-weight: 600;
-      right: 0;
-      cursor: pointer;
-    }
-  }
 }
 
 footer {
@@ -999,10 +874,7 @@ footer {
 }
 
 
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	background-color:white;
-}
+
 
 #button-blue{
 	float:left;
@@ -1045,21 +917,6 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
-@media only screen and (max-width: 580px) {
-	#form-div{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-}
-
-
-
-
-
 .portfolio {
 	--slides-per-page: 6;
 	margin: 0;
@@ -1068,10 +925,7 @@ input:focus, textarea:focus {
 	color: hsl(0, 0%, 100%);
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
-}
+
 
 #hero-slides {
 	--page: 0;
@@ -1367,9 +1221,7 @@ a {
 		height: 12vh;
 		font-size: 1vh;
 		
-// 		#page-counter {
-			
-// 		}
+
 		#dribbble {
 			border-radius: 2vh;
 			position: absolute;
@@ -1523,10 +1375,11 @@ form button:hover {
 }
 
 
-//media 
-
-
+//mediaqueries
 @media screen and (max-width: 600px) {
+  body {
+    font-size: 12pt;
+  }
   table {
     border: 0;
   }
@@ -1570,9 +1423,7 @@ form button:hover {
 }
 
 
-body {
-  font-size: 12pt;
-}
+
 
 .container {
   padding: 0 20px;
@@ -1760,7 +1611,7 @@ section {
   }
 
   // PORTFOLIO
-  &#portfolio {
+  &:nth-of-type(3) {
 
     .filter {
       font-size: 11pt;
@@ -1781,7 +1632,7 @@ section {
     }
   }
 
-
+  //contact
   &:nth-of-type(4) {
     padding: 130px 0 180px 0;
     .label {
@@ -1826,9 +1677,6 @@ section {
   }
 }
 
-@media screen and (min-width: 600px) {
-
-}
 @media (min-width: 1200px) and (max-width: 1699px) {
 	body {
 		--slides-per-page: 3;
