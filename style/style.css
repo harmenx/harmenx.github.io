@@ -13,11 +13,6 @@
   src: url("./fonts/ProximaNovaBold.ttf");
 }
 
-.skillIcon img {
-  width: 80px;
-  height: 80px;
-}
-
 @-webkit-keyframes fadeIn {
   100% {
     opacity: 1;
@@ -1943,6 +1938,23 @@ body {
 .skillTable td:hover {
   background: #006ac0;
   border-radius: 5px;
+}
+
+.skillIcon img {
+  width: 80px;
+  height: 80px;
+}
+
+.pSkillIcon {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.pSkillIcon img {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50px;
 }
 
 nav .link-wrap {
