@@ -284,14 +284,16 @@ table th {
   font-size: 14pt;
   font-weight: 500;
 }
-
-.resume {
-  background: #455261;
-  height: 100px;
+.flex-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: right;
+  top:0px;
 }
-
 // NAV
 nav {
+ 
   @include pos($left: 0, $bottom: 0);
   height: 50px;
   width: 100%;
@@ -314,6 +316,10 @@ nav {
     overflow: hidden;
     height: 0;
     transition: height .3s ease-out;
+    right: 20px;
+    top: 20px;
+
+
 
     &.visible {
       height: 220px;
@@ -809,23 +815,37 @@ section {
 }
 
 footer {
-
+  .footnote {
+    font-size: 10pt;
+    color: #fff;
+    margin-top: 35px;
+    margin-right:10px;
+    text-align: right;
+    .highlight {
+      color: $secondary;
+    }
+  }
+  .info-box{
+    bottom: 0;
+    position: absolute;
+    right: 20px;
+  }
   position: fixed;
   height: 100px;
   bottom: 20px;
   width: 100%;
- 
+}
 
   .icon-wrap {
     .icon {
       overflow: hidden;
       transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
       cursor: pointer;
-      width: 55px;
-      height: 55px;
+      width: 40px;
+      height: 40px;
       position: relative;
       text-align: center;
-      margin: 0 15px;
+      margin-right:15px;
       background: #262F38;
       font-size: 18pt;
 
@@ -855,17 +875,8 @@ footer {
       -moz-animation: toBottomFromTop 0.3s forwards;
       animation: toBottomFromTop 0.3s forwards;
     }
-  }
 
-  .footnote {
-    font-size: 10pt;
-    color: #fff;
-    margin-top: 35px;
 
-    .highlight {
-      color: $secondary;
-    }
-  }
 }
 
 .focused{
@@ -1508,6 +1519,7 @@ form button:hover {
   }
 }
 nav {
+
   .link-wrap {
     position: initial;
     background: none;
@@ -1517,7 +1529,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 400px;
-
+    display:none;
 
     .visible {
       height: initial;
@@ -1549,9 +1561,24 @@ section {
 
   // HOME
   &:nth-of-type(1) {
-    .text {
+    .rightItem{
+      float: left;
+      margin-left:20px;
+      margin-top:500px;
+      text-align:left;
+
+    }
+    .flex-left {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: left;
+    
+    }
+    .fpText {
       font-size: 32pt;
       line-height: 36pt;
+      padding-bottom:10px;
     }
 
     .button {
