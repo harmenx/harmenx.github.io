@@ -11,11 +11,11 @@ $(function () {
     $('.link-wrap').removeClass('visible');
 
     $('nav span').removeClass('active');
-    $('section#home').addClass('hidden');
-    $('section#portfolio').addClass('hidden');
+    $('section#home').addClass('');
+    $('section#portfolio').addClass('');
     $('section#contact').addClass('hidden');
     $('section#profile').addClass('hidden');
-
+ 
     highlightLink(anchor);
     if (anchor === "home") {
       $('section#home').removeClass('hidden');
@@ -26,7 +26,9 @@ $(function () {
     } else {
       $('section#contact').removeClass('hidden');
     }
-    slide(0,1);
+    $(document.body).animate({
+      'scrollTop':   $('#'+anchor).offset().top
+    }, 2000);
   });
 
   $('.mdi-menu').click(function () {

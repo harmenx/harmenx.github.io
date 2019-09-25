@@ -153,7 +153,9 @@ $curve: cubic-bezier(0.7, 0, 0.3, 1);
 
 
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 a {
   text-decoration: none;
@@ -220,7 +222,9 @@ table th {
 .overflow-wrap {
   overflow-x: hidden;
 }
-
+.hidden{
+  display:none !important;
+}
 
 
 .button {
@@ -394,123 +398,11 @@ nav {
   transition: .7s;
 }
 
-// MODAL
-.modal-wrap {
-  height: 100vh; width: 100vw;
-  position: fixed;
-  pointer-events: none;
-  z-index: 100;
+//main page
 
-  .mask {
-    height: 100%; width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    opacity: 0;
-    transition: opacity .3s;
-  }
 
-  .modal {
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    position: relative;
-    transition: all .3s;
-    transform: scale(0.8);
-    opacity: 0;
-    align-items: flex-start;
-    text-align: left;
-    box-sizing: border-box;
-    color: #333;
-    height: 100vh;
-  }
 
-  .close {
-    bottom: 25px;
-    right: 10px;
-    color: #bbb;
-    font-size: 20pt;
-    position: absolute;
-    font-weight: 800;
-    cursor: pointer;
-  }
 
-  .info-box {
-    border-top: 3px solid $primary-darkest;
-    padding: 15px 10px 85px 10px;
-    box-sizing: border-box;
-    color: #444;
-  }
-
-  .title {
-    font-size: 16pt;
-    line-height: 20pt;
-    font-family: 'ProximaNovaBold';
-  }
-
-  .tag {
-    display: block;
-    font-weight: 300;
-    color: #c0c0c0;
-    font-family: 'ProximaNovaBold';
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding-bottom: 15px;
-    font-size: 8pt;
-  }
-
-  .detail {
-    font-size: 9pt;
-    line-height: 14pt;
-    margin-top: 13px;
-  }
-
-  .mdi-open-in-new {
-    position: relative;
-    left: -10px;
-    font-size: 11pt;
-  }
-
-  .button {
-    padding: 11px 30px;
-    font-size: 10pt;
-    transition: all .5s;
-    cursor: pointer;
-    background: $secondary;
-    color: #fff;
-    font-weight: 600;
-    border: 0;
-    pointer-events: none;
-    visibility: hidden;
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-
-    &.visible {
-      pointer-events: initial;
-      visibility: visible;
-    }
-
-    &:hover {
-      color: $secondary;
-      background: #fff;
-    }
-  }
-
-  .carousel {
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-  }
-
-  &.visible {
-    pointer-events: initial;
-    .modal {
-      transform: scale(1);
-      opacity: 1;
-    }
-    .mask {
-      opacity: 1;
-    }
-  }
-}
 
 section {
   padding: 70px 0 70px 0;
@@ -529,7 +421,6 @@ section {
   //HOME
   & {
     padding: 0 10px;
-    background: #000;
     color: #fff;
     height: calc(100vh);
 
@@ -887,25 +778,6 @@ footer {
 
 
 
-#button-blue{
-	float:left;
-	width: 100%;
-	border: #fbfbfb solid 4px;
-	cursor:pointer;
-	background-color: #3498db;
-	color:white;
-	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-#button-blue:hover{
-	background-color: rgba(0,0,0,0);
-	color: #0493bd;
-}
 	
 .submit:hover {
 	color: #3498db;
@@ -927,7 +799,7 @@ footer {
   width:100%;
   background-color:white;
 }
-
+//porfolio
 .portfolio {
 	--slides-per-page: 6;
 	margin: 0;
@@ -1231,35 +1103,6 @@ footer {
 	#footer {
 		height: 12vh;
 		font-size: 1vh;
-		
-
-		#dribbble {
-			border-radius: 2vh;
-			position: absolute;
-			bottom: 4vh;
-			right: 4vh;
-			transition: 300ms $curve;
-			padding-left: 1.5vh;
-			
-			&:before,
-			&:after {
-				vertical-align: middle;
-				transition: inherit;
-			}
-			&.hover,
-			&:hover {
-				background: hsl(337, 78%, 61%);
-				
-				&:before {
-					opacity: 1;
-					transform: translate3D(0, 0, 0);
-					transition-delay: 50ms;
-				}
-				&:after {
-					filter: saturate(0%) contrast(200%) brightness(200%) invert(100%);
-				}
-			}
-		}
 	}
 }
 
@@ -1381,9 +1224,7 @@ form button:hover {
   height: 100%;
 }
 
-.hidden{
-  display:none !important;
-}
+
 
 
 //mediaqueries
@@ -1579,6 +1420,10 @@ section {
       font-size: 32pt;
       line-height: 36pt;
       padding-bottom:10px;
+      //harm
+      -webkit-animation: entry 0.3s forwards;
+      -moz-animation: entry 0.3s forwards;
+      animation: entry 0.3s forwards;
     }
 
     .button {
@@ -1786,7 +1631,7 @@ section {
   section {
     // ABOUT
     &#profile {
-      background: #000;
+   
       .bars-wrap {
         margin: 0 0 0 0;
       }
