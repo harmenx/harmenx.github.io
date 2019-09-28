@@ -11,20 +11,13 @@ $(function () {
     $('.link-wrap').removeClass('visible');
 
     $('nav span').removeClass('active');
-    $('section#home').addClass('');
-    $('section#portfolio').addClass('');
-    $('section#contact').addClass('hidden');
-    $('section#profile').addClass('hidden');
+ 
  
     highlightLink(anchor);
     if (anchor === "home") {
-      $('section#home').removeClass('hidden');
     } else if (anchor === "profile") {
-      $('section#profile').removeClass('hidden');
     } else if (anchor === "portfolio") {
-      $('section#portfolio').removeClass('hidden');
     } else {
-      $('section#contact').removeClass('hidden');
     }
     $(document.body).animate({
       'scrollTop':   $('#'+anchor).offset().top

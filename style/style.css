@@ -344,10 +344,6 @@ table th {
   overflow-x: hidden;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .button {
   padding: 10px 20px;
   border: 2px solid #fff;
