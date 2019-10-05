@@ -163,7 +163,8 @@ a {
 }
 
 body {
-  background: #000;
+  background-color: #000;
+  background-image: url('../img/worldmap.svg');
   color: #fff;
   font-family: 'ProximaNovaThin';
   text-align: center;
@@ -416,7 +417,7 @@ section {
   }
 
   //HOME
-  & {
+  &:nth-of-type(1) {
     padding: 0 10px;
     color: #fff;
     height: calc(100vh);
@@ -540,10 +541,6 @@ section {
         }
       }
 
-      span {
-        display: none;
-      }
-
       &.fill {
         @include pos($top: 0, $left: 0);
         background-color: $primary-dark;
@@ -567,10 +564,6 @@ section {
         }
       }
 
-      span {
-        z-index: 1;
-        padding: 0 15px 0 0;
-      }
     }
   }
 
@@ -582,7 +575,7 @@ section {
     -webkit-animation: slideIn 2s forwards;
     -moz-animation: slideIn 2s forwards;
     animation: slideIn 2s forwards;
-
+    height:calc(80vh);
     .container {
       padding: 0;
     }
@@ -1112,18 +1105,15 @@ footer {
 .contactWrapper {
   position: absolute;
  
-  top: 35%;
+  top: 60%;
   left: 30%;
 
   width: 40%;
-  height: 400px;
+  height: 300px;
   margin-top: -200px;
   overflow: hidden;
 }
-.contactWrapper.form-success .container h1 {
-  -webkit-transform: translateY(85px);
-          transform: translateY(85px);
-}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -1131,12 +1121,7 @@ footer {
   height: 400px;
   text-align: center;
 }
-.container h1 {
-  font-size: 22px;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-put;
-  font-weight: 200;
-}
+
 form {
   padding: 20px 0;
   position: relative;
@@ -1228,6 +1213,7 @@ form button:hover {
 @media screen and (max-width: 600px) {
   body {
     font-size: 12pt;
+  
   }
   table {
     border: 0;
@@ -1503,7 +1489,9 @@ section {
 
   //contact
   &:nth-of-type(4) {
+    background: #040404;
     padding: 130px 0 180px 0;
+    height:calc(20vh);
     .label {
       line-height: 22pt;
       font-size: 16pt;
@@ -1628,7 +1616,7 @@ section {
   section {
     // ABOUT
     &#profile {
-   
+      background: #040404;
       .bars-wrap {
         margin: 0 0 0 0;
       }

@@ -281,7 +281,8 @@ a {
 }
 
 body {
-  background: #000;
+  background-color: #000;
+  background-image: url("../img/worldmap.svg");
   color: #fff;
   font-family: 'ProximaNovaThin';
   text-align: center;
@@ -567,17 +568,17 @@ section .container {
           box-sizing: border-box;
 }
 
-section {
+section:nth-of-type(1) {
   padding: 0 10px;
   color: #fff;
   height: calc(100vh);
 }
 
-section .highlight {
+section:nth-of-type(1) .highlight {
   font-family: 'ProximaNovaSemibold';
 }
 
-section .text {
+section:nth-of-type(1) .text {
   margin: 0 0 20px 0;
   font-size: 16pt;
   line-height: 20pt;
@@ -585,25 +586,25 @@ section .text {
   pointer-events: none;
 }
 
-section .hexagon {
+section:nth-of-type(1) .hexagon {
   -webkit-transition: -webkit-transform .9s ease-in-out;
   transition: -webkit-transform .9s ease-in-out;
   transition: transform .9s ease-in-out;
   transition: transform .9s ease-in-out, -webkit-transform .9s ease-in-out;
 }
 
-section .hexagon:hover {
+section:nth-of-type(1) .hexagon:hover {
   -webkit-transform: rotate(540deg);
           transform: rotate(540deg);
 }
 
-section .button {
+section:nth-of-type(1) .button {
   padding: 12px 40px 12px 15px;
   position: relative;
   margin-bottom: 53px;
 }
 
-section .button .mdi {
+section:nth-of-type(1) .button .mdi {
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
@@ -613,7 +614,7 @@ section .button .mdi {
   top: 11px;
 }
 
-section .button:hover .mdi {
+section:nth-of-type(1) .button:hover .mdi {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -741,10 +742,6 @@ section:nth-of-type(2) .bar:nth-child(10) .fill {
   transition: 2s 0.2s width ease-in-out;
 }
 
-section:nth-of-type(2) .bar span {
-  display: none;
-}
-
 section:nth-of-type(2) .bar.fill {
   top: 0;
   left: 0;
@@ -773,16 +770,12 @@ section:nth-of-type(2) .bar.secondary .tag {
   background-color: #006ac0;
 }
 
-section:nth-of-type(2) .bar span {
-  z-index: 1;
-  padding: 0 15px 0 0;
-}
-
 section#portfolio {
   padding-top: 100px;
   color: white;
   -webkit-animation: slideIn 2s forwards;
   animation: slideIn 2s forwards;
+  height: calc(80vh);
 }
 
 section#portfolio .container {
@@ -1396,17 +1389,12 @@ footer .info-box {
 
 .contactWrapper {
   position: absolute;
-  top: 35%;
+  top: 60%;
   left: 30%;
   width: 40%;
-  height: 400px;
+  height: 300px;
   margin-top: -200px;
   overflow: hidden;
-}
-
-.contactWrapper.form-success .container h1 {
-  -webkit-transform: translateY(85px);
-  transform: translateY(85px);
 }
 
 .container {
@@ -1415,15 +1403,6 @@ footer .info-box {
   padding: 80px 0;
   height: 400px;
   text-align: center;
-}
-
-.container h1 {
-  font-size: 22px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-timing-function: ease-in-put;
-          transition-timing-function: ease-in-put;
-  font-weight: 200;
 }
 
 form {
@@ -1774,7 +1753,9 @@ section:nth-of-type(3) #gallery .mix .card {
 }
 
 section:nth-of-type(4) {
+  background: #040404;
   padding: 130px 0 180px 0;
+  height: calc(20vh);
 }
 
 section:nth-of-type(4) .label {
@@ -1909,6 +1890,9 @@ section:nth-of-type(5) form {
     max-height: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  section#profile {
+    background: #040404;
   }
   section#profile .bars-wrap {
     margin: 0 0 0 0;
