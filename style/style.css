@@ -437,6 +437,7 @@ table th {
       -ms-flex-align: right;
           align-items: right;
   top: 0px;
+  left: initial;
 }
 
 nav {
@@ -1618,7 +1619,7 @@ form button:hover {
 }
 
 nav .link-wrap {
-  position: initial;
+  position: absolute;
   background: none;
   overflow: visible;
   height: initial;
@@ -1630,7 +1631,6 @@ nav .link-wrap {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 400px;
-  display: none;
 }
 
 nav .link-wrap .visible {

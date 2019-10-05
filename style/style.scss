@@ -292,6 +292,7 @@ table th {
   justify-content: right;
   align-items: right;
   top:0px;
+  left:initial;
 }
 // NAV
 nav {
@@ -1345,7 +1346,7 @@ form button:hover {
 nav {
 
   .link-wrap {
-    position: initial;
+    position: absolute;
     background: none;
     overflow: visible;
     height: initial;
@@ -1353,7 +1354,6 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 400px;
-    display:none;
 
     .visible {
       height: initial;
