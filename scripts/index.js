@@ -1,27 +1,17 @@
 $(function () {
 
-  function highlightLink(anchor) {
-    $('nav .active').removeClass('active');
-    $("nav").find('[dest="' + anchor + '"]').addClass('active');
-  }
 
   // EVENT HANDLERS
-  $('.page-link').click(function () {
+  $('.page-link').click(function() {
     var anchor = $(this).attr("dest");
     $('.link-wrap').removeClass('visible');
 
     $('nav span').removeClass('active');
- 
- 
-    highlightLink(anchor);
-    if (anchor === "home") {
-    } else if (anchor === "profile") {
-    } else if (anchor === "portfolio") {
-    } else {
-    }
-    $(document.body).animate({
-      'scrollTop':   $('#'+anchor).offset().top
-    }, 2000);
+    $("nav").find('[dest="'+ anchor +'"]').addClass('active');
+
+    $('html, body').animate({
+      scrollTop: $('#' + anchor).offset().top
+    }, 400);
   });
 
   $('.mdi-menu').click(function () {
@@ -56,3 +46,34 @@ window.onload = function () {
 };
 
 
+$(window).on('scroll', function () {
+
+  var pos = $(window).scrollTop();
+  var pos2 = pos + 50;
+  var scrollBottom = pos + $(window).height();
+
+
+
+  // Link Highlighting
+  if (pos2 > $('#home').offset().top)       { highlightLink('home'); }
+  if (pos2 > $('#profile').offset().top)      { highlightLink('profile'); }
+  if (pos2 > $('#portfolio').offset().top)  { highlightLink('portfolio'); }
+  if (pos2 > $('#contact').offset().top ||
+      pos + $(window).height() === $(document).height()) {
+        highlightLink('contact');
+  }
+
+
+  if(!$('body').hasClass('disable-hover')) {
+    $('body').addClass('disable-hover')
+  }
+
+  lockTimer = setTimeout(function(){
+    $('body').removeClass('disable-hover')
+  }, 500);
+});
+
+function highlightLink(anchor) {
+  $('nav .active').removeClass('active');
+  $("nav").find('[dest="' + anchor + '"]').addClass('active');
+}
