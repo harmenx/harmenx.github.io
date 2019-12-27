@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="style/style.css">
   <script src="scripts/index.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
    
@@ -42,18 +43,56 @@
       </section>
       <section id="profile" >
         <div class="row">
-        <div class="col">
-          <div class="icon">
 
-          
+          <div class="card">
+            <div class="heading">Frontend</div>
+            <div class="pSkillIcon">
+              <img src="./img/icons/reactjs.svg">
+            </div>
+     
           </div>
-          <h1>Web Development</h1>
-          
-        </div>
+          <div class="card">
+            <div class="heading">Backend</div>
+            <div class="pSkillIcon">
+              <img src="./img/icons/node.svg">
+            </div>
+    
+          </div>
+          <div class="card">
+            <div class="heading">DevOps</div>
+            <div class="pSkillIcon">
+              <img src="./img/icons/jenkins.svg">
+            </div>
+  
+          </div>
+
+           
 
         </div>
         <div class="row">
-  
+
+
+          <div class="card">
+            <div class="heading">Mobile</div>
+            <div class="pSkillIcon">
+              <img src="./img/icons/xamarin.svg">    <img src="./img/icons/reactjs.svg">
+            </div>
+      
+          </div>
+          <div class="card">
+            <div class="heading">Desktop</div>
+            <div class="pSkillIcon">
+              <img src="./img/icons/visualstudio.svg">
+            </div>
+
+          </div>
+          <div class="card">
+            <div class="heading">Cloud</div>
+            <div class="pSkillIcon">
+              <img src="./img/icons/aws.svg">      <img src="./img/icons/azure.svg">
+            </div>
+
+          </div>
           
         </div>
       </section>
@@ -167,7 +206,81 @@
      
       <!-- CONTACT -->
       <section id="contact">
-
+        <div class="box">
+          <h2 class="section-title">Get in Touch with Me</h2>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <div class="divide20"></div>
+          <div class="row text-center services-2">
+            <div class="col-md-3 col-sm-6"> <i class="budicon-map"></i>
+              <p>Moon Street Light Avenue <br>
+                14/05 Jupiter, JP 80630</p>
+            </div>
+            <div class="col-md-3 col-sm-6"> <i class="budicon-telephone"></i>
+              <p>00 (123) 456 78 90 <br>
+                00 (987) 654 32 10 </p>
+            </div>
+            <div class="col-md-3 col-sm-6"> <i class="budicon-mobile"></i>
+              <p>00 (123) 456 78 90 <br>
+                00 (987) 654 32 10 </p>
+            </div>
+            <div class="col-md-3 col-sm-6"> <i class="budicon-mail"></i>
+              <p> <a class="nocolor" href="mailto:#">manager@email.com</a> <br>
+                <a class="nocolor" href="mailto:#">asistant@email.com</a> </p>
+            </div>
+          </div>
+          <!-- /.services-2 -->
+          <div class="divide30"></div>
+          <div class="form-container">
+            <div class="response alert alert-success"></div>
+            <form class="forms" action="contact/form-handler.php" method="post">
+              <fieldset>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-row text-input-row name-field">
+                      <label>Name</label>
+                      <input type="text" name="name" class="text-input defaultText required defaultTextActive" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                    </div>
+                    <div class="form-row text-input-row email-field">
+                      <label>Email</label>
+                      <input type="text" name="email" class="text-input defaultText required email defaultTextActive">
+                    </div>
+                    <div class="form-row text-input-row subject-field">
+                      <label>Subject</label>
+                      <input type="text" name="subject" class="text-input defaultText defaultTextActive">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 lp5">
+                    <div class="form-row text-area-row">
+                      <label>Message</label>
+                      <textarea name="message" class="text-area required"></textarea>
+                    </div>
+                    <div class="form-row hidden-row">
+                      <input type="hidden" name="hidden" value="">
+                    </div>
+                    <div class="nocomment" style="display: none;">
+                      <label for="nocomment">Leave This Field Empty</label>
+                      <input id="nocomment" value="" name="nocomment">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="button-row pull-right">
+                      <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 lp5">
+                    <div class="button-row pull-left">
+                      <input type="reset" value="Clear Message" name="reset" class="btn btn-submit bm0">
+                    </div>
+                  </div>
+                  <input type="hidden" name="v_error" id="v-error" value="Required">
+                  <input type="hidden" name="v_email" id="v-email" value="Enter a valid email">
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <!-- /.form-container --> 
+          
+        </div>
       </section>
 
     <footer>

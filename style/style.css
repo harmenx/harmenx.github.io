@@ -55,7 +55,8 @@ body {
   text-align: center;
   position: fixed;
   width: 80px;
-  background-color: #ffffff12;
+  background: black;
+  opacity: 0.9;
   top: 0;
   left: 0;
   bottom: 0;
@@ -79,6 +80,11 @@ body {
   cursor: pointer;
 }
 
+.pSkillIcon img {
+  height: 20px;
+  width: 20px;
+}
+
 .intro {
   color: white;
   font-size: 36px;
@@ -87,6 +93,7 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
+  font-family: 'ProximaNovaSemiBold';
 }
 
 .intro2 {
@@ -103,11 +110,48 @@ section {
   height: 100vh;
 }
 
+#profile {
+  background: black;
+  opacity: 0.9;
+  margin: 0 200px 200px 200px;
+  padding: 40px;
+  height: 80vh;
+}
+
+#profile .heading {
+  font-size: 18px;
+  color: white;
+}
+
 .portfolio {
   --slides-per-page: 6;
   margin: 0;
   overflow: hidden;
   height: 60vh;
+  color: white;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  width: 33%;
+  margin-top: 20px;
+}
+
+.card h1 {
   color: white;
 }
 
@@ -173,7 +217,7 @@ section {
 
 #hero-slides #slides-cont {
   position: relative;
-  --button-height: 2vh;
+  --button-height: 4vh;
   --button-spacing: 0.2vh;
 }
 
@@ -189,7 +233,7 @@ section {
 }
 
 #hero-slides #slides-cont .button:before, #hero-slides #slides-cont .button:after {
-  line-height: 2vh;
+  line-height: 4vh;
   position: absolute;
   margin-left: -0.25vw;
   pointer-events: none;
@@ -293,7 +337,7 @@ section {
   display: inline-block;
   vertical-align: top;
   font-size: 1.5vw;
-  width: 24em;
+  width: 16em;
   height: var(--slides-height);
   margin: 0 1.333em;
   background: #101419;
@@ -382,7 +426,7 @@ section {
 
 #hero-slides #slides .slide .headline {
   color: #fff;
-  font-size: 2.667em;
+  font-size: 1.2em;
   font-weight: 900;
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
@@ -391,6 +435,7 @@ section {
 #hero-slides #slides .slide .link {
   display: inline-block;
   background: #0d96f2;
+  color: white;
   padding: 0.5em 1.25em;
   font-size: 1.33em;
   opacity: 0;
@@ -439,7 +484,7 @@ section {
 #hero-slides #slides .slide.hover .headline, #hero-slides #slides .slide:hover .headline {
   -webkit-transition-delay: 100ms;
           transition-delay: 100ms;
-  bottom: 1.5em;
+  bottom: 3em;
 }
 
 #hero-slides #slides .slide.hover .link, #hero-slides #slides .slide:hover .link {
@@ -455,10 +500,107 @@ section {
   font-size: 1vh;
 }
 
-#contact, #profile {
+#contact {
   background: black;
   opacity: 0.9;
-  margin: 200px;
+  margin: 0 200px 200px 200px;
+  padding: 40px;
+}
+
+#contact .section-title, #contact h1.post-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+#contact .divide20 {
+  width: 100%;
+  height: 20px;
+}
+
+#contact .divide30 {
+  width: 100%;
+  height: 30px;
+}
+
+#contact .alert {
+  padding: 15px;
+  padding-bottom: 13px;
+  margin-bottom: 20px;
+  border-width: 2px;
+  border-radius: 0;
+  background: none;
+}
+
+#contact .forms {
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+#contact .form-container .response {
+  display: none;
+}
+
+#contact label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact input[type="text"], #contact input[type="password"], #contact input[type="datetime"], #contact input[type="datetime-local"], #contact input[type="date"], #contact input[type="month"], #contact input[type="time"], #contact input[type="week"], #contact input[type="number"], #contact input[type="email"], #contact input[type="url"], #contact input[type="search"], #contact input[type="tel"], #contact input[type="color"], #contact .uneditable-input {
+  width: 100%;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  height: 44px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  border: 0;
+  color: #848484;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: none;
+  resize: none;
+  vertical-align: middle;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+}
+
+#contact textarea {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  min-height: 234px;
+  resize: vertical;
+}
+
+#contact .btn, #contact .btn-submit {
+  color: #aaaaaa !important;
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+  margin-right: 4px;
+  font-size: 12px;
+  padding: 9px 17px;
+  font-weight: 800;
+  text-shadow: none;
+  text-transform: uppercase;
+  border-radius: 0;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: inline-block;
 }
 
 .col {
