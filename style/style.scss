@@ -50,29 +50,28 @@ $curve: cubic-bezier(0.7, 0, 0.3, 1);
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
-body{
+.overflow-wrap{
   background: black;
-  background-image: url('../img/main.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+
 }
 .sidebar{
+	display:none;
   padding-top:200px;
   padding-bottom:200px;
   text-align:center;
   position: fixed;
   width:80px;
-  background:black;
+  background:white;
   opacity: 0.9;
-  top:0;
-  left:0;
-  bottom:0;
-  display:flex;
+  top:30%;
+  left:20px;
+  top:30%;
+ // display:flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content:space-between;
   z-index:10000;
+  border-radius: 5px;
 }
 .page-link{
   color:white;
@@ -440,6 +439,7 @@ section{
   opacity: 0.9;
   margin: 0 200px 200px 200px;
   padding:40px;
+  color:white;
   .section-title, h1.post-title {
     margin-bottom: 20px;
     font-size: 22px;

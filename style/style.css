@@ -41,28 +41,22 @@
           font-feature-settings: 'liga';
 }
 
-body {
+.overflow-wrap {
   background: black;
-  background-image: url("../img/main.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 .sidebar {
+  display: none;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   position: fixed;
   width: 80px;
-  background: black;
+  background: white;
   opacity: 0.9;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  top: 30%;
+  left: 20px;
+  top: 30%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -73,6 +67,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 10000;
+  border-radius: 5px;
 }
 
 .page-link {
@@ -505,6 +500,7 @@ section {
   opacity: 0.9;
   margin: 0 200px 200px 200px;
   padding: 40px;
+  color: white;
 }
 
 #contact .section-title, #contact h1.post-title {
