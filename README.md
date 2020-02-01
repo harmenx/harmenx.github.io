@@ -1,17 +1,7 @@
-To do -
-Background Effect
-Animations
+Loader - scroll up after 2 seconds
+Background effect
+Main Screen
+Transition - Scroll
+Projects
+Contact us
 
-Skill
-
-Portfolio Finish
-
-Contact Us
-
-Clean 
-Mobile  
-Lighthouse 
-SEO
-
-CodePen x 5
-Github x 3
