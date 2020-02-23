@@ -22,18 +22,26 @@ window.onload = function () {
   setTimeout(function () {
     $('#content').removeClass('hidden');
     $('#preloader').addClass('hidden');
-  }, 500);
+  }, 1500);
 
-	$('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-		scrollHorizontally: true
-	});
+  var el = document.querySelectorAll('section');
+  var app = new onePageScroll({
+      el: el
+  });
+  
+};
+function sendMsg(scope){
+      
 
-	//methods
-	$.fn.fullpage.setAllowScrolling(false);
-
-
+  $.post({
+    url: "https://formcarry.com/s/VNlNBJYI8hO",
+    method: "POST",
+    data: { message: $('form').serialize() },
+    dataType: "json"
+  }).done(function (response) {
+   // $('#success').addClass('expand');
+   // $('#contact-form').find("input[type=text], input[type=email], textarea").val("");
+  });
 };
 
 

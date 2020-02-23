@@ -93,6 +93,14 @@ html, body, #container {
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   font-family: 'ProximaNovaSemiBold';
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
 }
 
 .intro2 {
@@ -103,18 +111,24 @@ html, body, #container {
   top: 58%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
 }
 
 section {
-  height: 100vh;
+  background: black;
 }
 
 #profile {
   background: black;
   opacity: 0.9;
-  margin: 0 200px 200px 200px;
   padding: 40px;
-  height: 80vh;
 }
 
 #profile .heading {
@@ -126,7 +140,7 @@ section {
   --slides-per-page: 6;
   margin: 0;
   overflow: hidden;
-  height: 60vh;
+  margin-top: 20vh;
   color: white;
 }
 
@@ -500,9 +514,7 @@ section {
 }
 
 #contact {
-  background: black;
-  opacity: 0.9;
-  margin: 0 200px 200px 200px;
+  background: #000;
   padding: 40px;
   color: white;
 }
@@ -581,6 +593,7 @@ section {
   margin-bottom: 20px;
   min-height: 234px;
   resize: vertical;
+  color: black;
 }
 
 #contact .btn, #contact .btn-submit {
@@ -609,12 +622,12 @@ section {
 
 @keyframes fadeInUp {
   from {
-    -webkit-transform: translate3d(0, 40px, 0);
-            transform: translate3d(0, 40px, 0);
+    -webkit-transform: translate3d(-50%, 40px, 0);
+            transform: translate3d(-50%, 40px, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
     opacity: 1;
   }
 }
