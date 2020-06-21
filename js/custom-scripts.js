@@ -581,7 +581,7 @@
           type: "POST",
           url: postUrl,
           data: data,
-          contentType: "application/json",
+          contentType: "text/html",
           beforeSend: function() {
             loader.fadeIn(1000);
           },
