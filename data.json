@@ -1,6 +1,6 @@
 {
   "personal": {
-    "name": "Alex Johnson",
+    "name": "Harmen",
     "title": "Full Stack Developer & UI/UX Designer",
     "description": "I create beautiful, functional web applications that solve real-world problems. Passionate about clean code, user experience, and cutting-edge technologies.",
     "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
@@ -17,7 +17,7 @@
     "description": "I'm a passionate full-stack developer with 6+ years of experience building scalable web applications. I specialize in React, Node.js, and modern web technologies. When I'm not coding, you'll find me exploring new frameworks, contributing to open source, or mentoring aspiring developers.",
     "stats": [
       { "number": "75+", "label": "Projects Completed" },
-      { "number": "6+", "label": "Years Experience" },
+      { "number": "12+", "label": "Years Experience" },
       { "number": "30+", "label": "Happy Clients" },
       { "number": "15+", "label": "Open Source Contributions" }
     ]

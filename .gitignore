@@ -1,2 +1,7 @@
 node_modules/
 .parcel-cache
+.next/
+out/
+.DS_Store
+.next/trace
+.DS_Store
