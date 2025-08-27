@@ -1,5 +1,7 @@
-const SkillsSection = () => {
-  const skills = [
+type Skill = { name: string; level: number };
+type SkillsContent = { title?: string; description?: string; skills?: Skill[] };
+const SkillsSection = ({ content }: { content?: SkillsContent }) => {
+  const skills = content?.skills || [
     { name: "React & TypeScript", level: 95 },
     { name: "Node.js & APIs", level: 90 },
     { name: "UI/UX Design", level: 85 },
@@ -14,10 +16,10 @@ const SkillsSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-light text-white mb-8 leading-tight">
-              Technical Arsenal
+              {content?.title || "Technical Arsenal"}
             </h2>
             <p className="text-xl text-white/80 font-light leading-relaxed max-w-2xl mx-auto">
-              A comprehensive toolkit honed through years of crafting digital experiences across platforms and industries.
+              {content?.description || "A comprehensive toolkit honed through years of crafting digital experiences across platforms and industries."}
             </p>
           </div>
 
