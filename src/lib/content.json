@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "title": "Welcome to My Portfolio",
+    "subtitle": "Frontend Developer & Designer",
+    "description": "Crafting beautiful and functional web experiences."
+  },
+  "mission": {
+    "title": "Mission",
+    "description": "My mission is to build accessible, performant, and delightful web applications."
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "React, TypeScript, Tailwind CSS, Vite, UI/UX Design, Accessibility"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am passionate about technology and design, always learning and improving."
+  },
+  "secondary": {
+    "title": "More Info",
+    "description": "Contact me for collaborations or freelance opportunities."
+  }
+}
