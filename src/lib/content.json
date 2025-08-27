@@ -1,23 +1,32 @@
 {
   "hero": {
-    "title": "Welcome to My Portfolio",
-    "subtitle": "Frontend Developer & Designer",
-    "description": "Crafting beautiful and functional web experiences."
+    "title": "Harmen Dark",
+    "subtitle": "Technical Lead · AI Engineer · Cloud Architect",
+    "description": "Cloud & AI Engineering Lead with 12+ years in full-stack architecture, scalable cloud infrastructure, and intelligent systems. Currently focused on generative AI and cloud-native architecture for real-world business systems."
   },
   "mission": {
     "title": "Mission",
-    "description": "My mission is to build accessible, performant, and delightful web applications."
+    "description": "Deliver robust, scalable, and intelligent digital solutions that empower businesses and users. My mission is to apply deep expertise in cloud, AI, and automation to solve real-world problems and drive innovation across industries."
   },
   "skills": {
-    "title": "Skills",
-    "description": "React, TypeScript, Tailwind CSS, Vite, UI/UX Design, Accessibility"
+    "title": "Skills & Technologies",
+    "description": "",
+    "skills": [
+      { "name": "Cloud & DevOps (AWS, Kubernetes, Terraform)", "level": 95 },
+      { "name": "AI & Data (Python, Hugging Face, LangChain)", "level": 92 },
+      { "name": "Backend & APIs (Node.js, GraphQL, Kafka)", "level": 90 },
+      { "name": "Front-end & UX (React, Next.js, WebGL)", "level": 90 },
+      { "name": "Testing & QA (Jest, Cypress, Selenium)", "level": 88 },
+      { "name": "Monitoring & Observability (Prometheus, Grafana)", "level": 85 },
+      { "name": "Databases (PostgreSQL, DynamoDB, MongoDB)", "level": 85 }
+    ]
   },
   "about": {
-    "title": "About Me",
-    "description": "I am passionate about technology and design, always learning and improving."
+    "title": "About Harmen",
+    "description": "Based in Auckland, New Zealand, I lead cloud and AI engineering teams to deliver scalable, secure, and innovative solutions. My experience spans startups, enterprise, and government, with a focus on cloud-native architecture, automation, and intelligent systems. I thrive on collaboration, technical leadership, and mentoring, and have a proven track record in delivering projects for Amazon, NZTA, Restaurant Brands, and more. Certified AWS Solutions Architect (Professional & Associate)."
   },
   "secondary": {
-    "title": "More Info",
-    "description": "Contact me for collaborations or freelance opportunities."
+    "title": "Contact & Collaboration",
+    "description": "Let’s connect! I am available for technical leadership, consulting, and advanced engineering roles. Reach out via harmen.dark@gmail.com or LinkedIn (harmdark) to discuss your project, collaboration, or AI/cloud strategy."
   }
 }

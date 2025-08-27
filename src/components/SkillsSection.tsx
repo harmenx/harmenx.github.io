@@ -18,9 +18,7 @@ const SkillsSection = ({ content }: { content?: SkillsContent }) => {
             <h2 className="text-5xl md:text-6xl font-light text-white mb-8 leading-tight">
               {content?.title || "Technical Arsenal"}
             </h2>
-            <p className="text-xl text-white/80 font-light leading-relaxed max-w-2xl mx-auto">
-              {content?.description || "A comprehensive toolkit honed through years of crafting digital experiences across platforms and industries."}
-            </p>
+      
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Hero from "@/components/Hero";
-import MissionSection from "@/components/MissionSection";
+import WorkSection from "@/components/MissionSection";
 import SkillsSection from "@/components/SkillsSection";
 import AboutSection from "@/components/AboutSection";
 import SecondarySection from "@/components/SecondarySection";
@@ -11,7 +11,7 @@ import content from "@/lib/content.json";
 
 const sections = [
   { key: "hero", label: "Hero", component: Hero },
-  { key: "mission", label: "Mission", component: MissionSection },
+  { key: "work", label: "Work", component: WorkSection },
   { key: "skills", label: "Skills", component: SkillsSection },
   { key: "about", label: "About", component: AboutSection },
   { key: "secondary", label: "Contact", component: SecondarySection },

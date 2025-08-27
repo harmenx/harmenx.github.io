@@ -11,28 +11,6 @@ const Hero = ({ content }: { content?: HeroContent }) => {
           JokerSeven
         </div>
 
-        {/* Navigation Links - Hidden on mobile */}
-        <div className="hidden md:flex items-center space-x-8">
-          <a 
-            href="#mission" 
-            className="text-white/80 hover:text-white transition-all duration-300 font-light tracking-wide"
-          >
-            Portfolio
-          </a>
-          <a 
-            href="#skills" 
-            className="text-white/80 hover:text-white transition-all duration-300 font-light tracking-wide"
-          >
-            Skills
-          </a>
-          <a 
-            href="#about" 
-            className="text-white/80 hover:text-white transition-all duration-300 font-light tracking-wide"
-          >
-            About
-          </a>
-        </div>
-
         {/* CTA Button */}
         <Button 
           variant="outline" 
