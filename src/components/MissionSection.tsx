@@ -1,13 +1,14 @@
-const MissionSection = () => {
+type MissionContent = { title?: string; description?: string };
+const MissionSection = ({ content }: { content?: MissionContent }) => {
   return (
     <section id="mission" className="min-h-screen flex items-center justify-center py-20 bg-black/40">
       <div className="container mx-auto px-8 lg:px-12">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-light text-white mb-8 leading-tight">
-            Mission Statement
+            {content?.title || "Mission Statement"}
           </h2>
           <p className="text-xl text-white/80 font-light leading-relaxed mb-12 max-w-3xl mx-auto">
-            To bridge the gap between imagination and reality through code, design, and relentless innovation.
+            {content?.description || "To bridge the gap between imagination and reality through code, design, and relentless innovation."}
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mt-16">
