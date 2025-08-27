@@ -1,12 +1,13 @@
-const SecondarySection = () => {
+type SecondaryContent = { title?: string; description?: string };
+const SecondarySection = ({ content }: { content?: SecondaryContent }) => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-black/50">
       <div className="text-center px-8">
         <h2 className="text-4xl font-bold text-white mb-6">
-          Ready to Collaborate?
+          {content?.title || "Ready to Collaborate?"}
         </h2>
         <p className="text-xl text-white/70 font-light mb-8">
-          Let's bring your next project to life together.
+          {content?.description || "Let's bring your next project to life together."}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
