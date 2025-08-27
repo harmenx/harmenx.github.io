@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 
-const Hero = () => {
+type HeroContent = { title?: string; subtitle?: string; description?: string };
+const Hero = ({ content }: { content?: HeroContent }) => {
   return (
     <div className="relative min-h-screen flex flex-col">
       {/* Navigation Bar */}
       <nav className="relative z-30 flex items-center justify-between p-8 lg:p-12">
         {/* Logo */}
         <div className="text-white font-light tracking-wide text-xl">
-          Sandstorm®
+          JokerSeven
         </div>
 
         {/* Navigation Links - Hidden on mobile */}
@@ -16,7 +17,7 @@ const Hero = () => {
             href="#mission" 
             className="text-white/80 hover:text-white transition-all duration-300 font-light tracking-wide"
           >
-            Mission
+            Portfolio
           </a>
           <a 
             href="#skills" 
@@ -47,24 +48,20 @@ const Hero = () => {
         <div className="w-full pb-8 px-8 lg:pb-12 lg:px-12 mt-24">
           {/* Tagline */}
           <p className="text-white/60 text-sm font-light tracking-wide mb-6">
-            Crafting digital experiences that leave lasting impressions.
+            {content?.subtitle || "Crafting digital experiences that leave lasting impressions."}
           </p>
 
           {/* Main Headlines */}
           <div className="mb-8">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-light leading-none text-white mb-2">
-              Build the Future.
-            </h1>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-light leading-none text-white/90">
-              Design the Story.
+              {content?.title || "Build the Future."}
             </h1>
           </div>
 
           {/* Description Paragraph */}
           <div className="lg:max-w-md">
             <p className="text-white/70 font-light leading-relaxed">
-              Where innovation meets artistry, I create immersive digital experiences that push boundaries. 
-              Every project is a journey from concept to reality, crafted with precision and passion.
+              {content?.description || "Where innovation meets artistry, I create immersive digital experiences that push boundaries. Every project is a journey from concept to reality, crafted with precision and passion."}
             </p>
           </div>
         </div>
