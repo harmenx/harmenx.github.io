@@ -1,4 +1,5 @@
-const AboutSection = () => {
+type AboutContent = { title?: string; description?: string };
+const AboutSection = ({ content }: { content?: AboutContent }) => {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20 bg-black/40">
       <div className="container mx-auto px-8 lg:px-12">
@@ -6,13 +7,11 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-5xl md:text-6xl font-light text-white mb-8 leading-tight">
-                About the Journey
+                {content?.title || "About the Journey"}
               </h2>
               <div className="space-y-6 text-white/80 font-light leading-relaxed">
                 <p>
-                  Born from a passion for both technology and storytelling, my journey began in the intersection 
-                  of code and creativity. What started as curiosity about how digital worlds are built has evolved 
-                  into a career dedicated to crafting experiences that matter.
+                  {content?.description || "Born from a passion for both technology and storytelling, my journey began in the intersection of code and creativity. What started as curiosity about how digital worlds are built has evolved into a career dedicated to crafting experiences that matter."}
                 </p>
                 <p>
                   Over the past decade, I've had the privilege of working with startups, agencies, and enterprises, 
