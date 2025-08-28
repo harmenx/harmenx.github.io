@@ -11,7 +11,7 @@ const SecondarySection = ({ content }: { content?: SecondaryContent }) => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
-            href="mailto:hello@portfolio.com" 
+            href="https://linkedin.com/in/harmdark" 
             className="px-8 py-3 border border-white/30 text-white/80 hover:border-white/60 hover:text-white rounded-full transition-all duration-300 font-light"
           >
             Get in Touch

@@ -110,35 +110,9 @@ const projects: Project[] = [
       "Created financial educational tools (HTML, CSS, JavaScript, Box2D, WebGL, Python, PHP).",
       "Developed cross-platform mobile games and marketing applications (Swift, Java)."
     ]
-  },
-  {
-    company: "Krunch.ai",
-    role: "Web3 Developer (Contract)",
-    period: "Feb. 2022 – Oct. 2022",
-    highlights: [
-      "Delivered customizable, cloud-hosted front-end marketplace for digital assets (Next.js, React, Sass).",
-      "Built modular UI and API architecture for scale and reuse.",
-      "Developed and tested smart contracts with Rust on Solana blockchain."
-    ]
-  },
-  {
-    company: "Karat",
-    role: "Interviewer & Quality Control",
-    period: "Oct. 2019 – Mar. 2022",
-    highlights: [
-      "Interviewed 600+ candidates for top tech companies (Amazon, Pinterest, Wayfair).",
-      "Mentored students and provided feedback on technical/interviewing skills."
-    ]
-  },
-  {
-    company: "NZILA",
-    role: "Python Developer (Contract)",
-    period: "Feb. 2018 – Mar. 2019",
-    highlights: [
-      "Built and extended features into NZILA web portal for 500+ users.",
-      "Improved security to mitigate DDOS, XSS, and SQL injections."
-    ]
   }
+
+
 ];
 
 const WorkSection = () => {
@@ -155,11 +129,11 @@ const WorkSection = () => {
                   <div key={idx} className="relative flex flex-col md:flex-row items-center justify-center">
                     <div className={`md:w-1/2 px-4 ${isLeft ? "md:pr-16 md:justify-end md:flex" : "md:pl-16 md:justify-start md:flex"} ${isLeft ? "order-1" : "order-3"}`}>
                       {isLeft && (
-                        <div className="md:text-right">
+                        <div className="md:text-left">
                           <span className="text-white/50 font-light text-sm">{proj.period}</span>
                           <h3 className="text-xl font-light text-white mb-1">{proj.company}</h3>
                           <div className="text-white/70 font-light text-md mb-2">{proj.role}</div>
-                          <ul className="list-disc pl-6 md:pl-0 md:pr-6 text-white/80 font-light space-y-1 mb-2 inline-block">
+                          <ul className="list-disc pl-6 text-white/80 font-light space-y-1 mb-2 inline-block">
                             {proj.highlights.map((h, i) => (
                               <li key={i}>{h}</li>
                             ))}

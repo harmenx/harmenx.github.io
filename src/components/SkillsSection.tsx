@@ -15,10 +15,7 @@ const SkillsSection = ({ content }: { content?: SkillsContent }) => {
       <div className="container mx-auto px-8 lg:px-12">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-light text-white mb-8 leading-tight">
-              {content?.title || "Technical Arsenal"}
-            </h2>
-      
+       
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">

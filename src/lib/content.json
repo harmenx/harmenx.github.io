@@ -13,9 +13,9 @@
     "description": "",
     "skills": [
       { "name": "Cloud & DevOps (AWS, Kubernetes, Terraform)", "level": 95 },
+      { "name": "Front-end & UX (React, Next.js, WebGL)", "level": 95 },
       { "name": "AI & Data (Python, Hugging Face, LangChain)", "level": 92 },
       { "name": "Backend & APIs (Node.js, GraphQL, Kafka)", "level": 90 },
-      { "name": "Front-end & UX (React, Next.js, WebGL)", "level": 90 },
       { "name": "Testing & QA (Jest, Cypress, Selenium)", "level": 88 },
       { "name": "Monitoring & Observability (Prometheus, Grafana)", "level": 85 },
       { "name": "Databases (PostgreSQL, DynamoDB, MongoDB)", "level": 85 }
@@ -27,6 +27,6 @@
   },
   "secondary": {
     "title": "Contact & Collaboration",
-    "description": "Let’s connect! I am available for technical leadership, consulting, and advanced engineering roles. Reach out via harmen.dark@gmail.com or LinkedIn (harmdark) to discuss your project, collaboration, or AI/cloud strategy."
+    "description": "Let’s connect! I am available for technical leadership, consulting, and advanced engineering roles. Reach out via LinkedIn (harmdark) to discuss your project, collaboration, or AI/cloud strategy."
   }
 }
