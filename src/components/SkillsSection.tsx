@@ -46,26 +46,21 @@ const SkillsSection = ({ content }: { content?: SkillsContent }) => {
               <h3 className="text-2xl font-light text-white mb-8">Expertise Areas</h3>
               <div className="space-y-8">
                 <div className="border border-white/20 p-6 rounded-lg hover:border-white/40 transition-all duration-300 bg-black/20">
-                  <h4 className="text-white font-light text-lg mb-3">Frontend Development</h4>
+                  <h4 className="text-white font-light text-lg mb-3">AI Engineering</h4>
                   <p className="text-white/70 font-light leading-relaxed text-sm">
-                    Crafting responsive, interactive interfaces with React, Vue, and modern CSS frameworks. 
-                    Specializing in performance optimization and accessibility.
+                    Designing and deploying intelligent systems using Python, Hugging Face, LangChain, and AWS Sagemaker. Experience with LLMs, generative AI, and automation for real-world business solutions.
                   </p>
                 </div>
-                
                 <div className="border border-white/20 p-6 rounded-lg hover:border-white/40 transition-all duration-300 bg-black/20">
-                  <h4 className="text-white font-light text-lg mb-3">Backend Systems</h4>
+                  <h4 className="text-white font-light text-lg mb-3">Cloud Architecture</h4>
                   <p className="text-white/70 font-light leading-relaxed text-sm">
-                    Building scalable APIs, microservices, and database architectures. 
-                    Experience with cloud platforms and containerization.
+                    Building scalable, secure, and resilient cloud infrastructure with AWS, Kubernetes, Terraform, and CI/CD. Proven record in DevOps, automation, and cloud-native best practices.
                   </p>
                 </div>
-                
                 <div className="border border-white/20 p-6 rounded-lg hover:border-white/40 transition-all duration-300 bg-black/20">
-                  <h4 className="text-white font-light text-lg mb-3">Creative Technology</h4>
+                  <h4 className="text-white font-light text-lg mb-3">Front-end Development</h4>
                   <p className="text-white/70 font-light leading-relaxed text-sm">
-                    Exploring the intersection of art and technology through WebGL, 
-                    interactive installations, and immersive experiences.
+                    Crafting responsive, interactive interfaces with React, Next.js, TypeScript, and modern CSS frameworks. Specializing in performance optimization, accessibility, and design systems.
                   </p>
                 </div>
               </div>

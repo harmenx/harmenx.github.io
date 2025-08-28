@@ -10,7 +10,7 @@ import content from "@/lib/content.json";
 
 
 const sections = [
-  { key: "hero", label: "Hero", component: Hero },
+  { key: "hero", label: "Home", component: Hero },
   { key: "work", label: "Work", component: WorkSection },
   { key: "skills", label: "Skills", component: SkillsSection },
   { key: "about", label: "About", component: AboutSection },

@@ -8,7 +8,7 @@ const Hero = ({ content }: { content?: HeroContent }) => {
       <nav className="relative z-30 flex items-center justify-between p-8 lg:p-12">
         {/* Logo */}
         <div className="text-white font-light tracking-wide text-xl">
-          JokerSeven
+       
         </div>
 
         {/* CTA Button */}
