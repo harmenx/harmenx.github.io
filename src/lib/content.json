@@ -1,32 +1,47 @@
 {
   "hero": {
     "title": "Harmen Dark",
-    "subtitle": "Technical Lead · AI Engineer · Cloud Architect",
-    "description": "Cloud & AI Engineering Lead with 12+ years in full-stack architecture, scalable cloud infrastructure, and intelligent systems. Currently focused on generative AI and cloud-native architecture for real-world business systems."
+    "subtitle": "Technical Lead · Distributed Systems · AI-Augmented Platforms",
+    "description": "Staff Software Engineer with 13+ years setting technical direction and owning distributed systems end-to-end at scale — Amazon, Xero (4.5M users, 99.999% uptime), and five years running an independent consultancy. Known for making the right architectural call under constraint and shipping systems that remain sound well after delivery."
   },
-  "mission": {
-    "title": "Mission",
-    "description": "Deliver robust, scalable, and intelligent digital solutions that empower businesses and users. My mission is to apply deep expertise in cloud, AI, and automation to solve real-world problems and drive innovation across industries."
+  "work": {
+    "title": "Experience",
+    "description": "Technical leadership and delivery across fintech, edtech, global SaaS, and government — from greenfield architecture to zero-downtime migrations at scale."
   },
   "skills": {
     "title": "Skills & Technologies",
     "description": "",
     "skills": [
-      { "name": "Cloud & DevOps (AWS, Kubernetes, Terraform)", "level": 95 },
-      { "name": "Front-end & UX (React, Next.js, WebGL)", "level": 95 },
-      { "name": "AI & Data (Python, Hugging Face, LangChain)", "level": 92 },
-      { "name": "Backend & APIs (Node.js, GraphQL, Kafka)", "level": 90 },
-      { "name": "Testing & QA (Jest, Cypress, Selenium)", "level": 88 },
-      { "name": "Monitoring & Observability (Prometheus, Grafana)", "level": 85 },
-      { "name": "Databases (PostgreSQL, DynamoDB, MongoDB)", "level": 85 }
+      { "name": "Cloud & Infrastructure (AWS, Terraform, Kubernetes, Docker)", "level": 95 },
+      { "name": "Backend & Distributed Systems (Node.js, Kafka, gRPC, Spring Boot)", "level": 93 },
+      { "name": "AI & ML (LangChain, LangGraph, SageMaker, Bedrock, PyTorch)", "level": 90 },
+      { "name": "Languages (Python, TypeScript, JavaScript, Java, C#)", "level": 92 },
+      { "name": "Frontend (React, React Native, Sass, D3.js, WebGL, MFE)", "level": 88 },
+      { "name": "Data Stores (PostgreSQL, DynamoDB, Redis, MongoDB, Snowflake)", "level": 88 },
+      { "name": "Observability (Prometheus, Grafana, Datadog, SLO design)", "level": 90 }
     ]
   },
   "about": {
     "title": "About Harmen",
-    "description": "Based in Auckland, New Zealand, I lead cloud and AI engineering teams to deliver scalable, secure, and innovative solutions. My experience spans startups, enterprise, and government, with a focus on cloud-native architecture, automation, and intelligent systems. I thrive on collaboration, technical leadership, and mentoring, and have a proven track record in delivering projects for Amazon, NZTA, Restaurant Brands, and more. Certified AWS Solutions Architect (Professional & Associate)."
+    "description": "Based in London, UK. Staff Software Engineer with 13+ years setting technical direction and owning distributed systems end-to-end at scale. Known for making the right architectural call under constraint, raising the engineering bar across teams, and actively applying AI to platform engineering problems — building production systems at the intersection of cloud-native infrastructure and applied AI.",
+    "education": "B.Sc Computer Science & Information Systems — University of Auckland (2011–2013)",
+    "certifications": [
+      "AWS Solutions Architect – Professional (2023)",
+      "AWS Solutions Architect – Associate (2021)",
+      "AWS Machine Learning, Security, Networking Speciality & Developer Associate (2026)"
+    ],
+    "recognition": [
+      "NZTA All Access Hackathon – First Place (2018)",
+      "Karat Technical Interviewer — 600+ interviews for Amazon, Pinterest, and Wayfair (2019–2022)"
+    ]
   },
   "secondary": {
-    "title": "Contact & Collaboration",
-    "description": "Let’s connect! I am available for technical leadership, consulting, and advanced engineering roles. Reach out via LinkedIn (harmdark) to discuss your project, collaboration, or AI/cloud strategy."
+    "title": "Contact",
+    "description": "Available for staff engineering, technical leadership, and consulting roles. London, UK.",
+    "links": [
+      { "label": "Email", "href": "mailto:harmen.dark@gmail.com" },
+      { "label": "LinkedIn", "href": "https://linkedin.com/in/harmdark" },
+      { "label": "GitHub", "href": "https://github.com/harmenx" }
+    ]
   }
 }

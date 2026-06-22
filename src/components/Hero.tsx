@@ -1,20 +1,25 @@
 import { Button } from "@/components/ui/button";
 
 type HeroContent = { title?: string; subtitle?: string; description?: string };
-const Hero = ({ content }: { content?: HeroContent }) => {
+const Hero = ({
+  content,
+  onViewWork,
+}: {
+  content?: HeroContent;
+  onViewWork?: () => void;
+}) => {
   return (
     <div className="relative min-h-screen flex flex-col">
       {/* Navigation Bar */}
       <nav className="relative z-30 flex items-center justify-between p-8 lg:p-12">
-        {/* Logo */}
         <div className="text-white font-light tracking-wide text-xl">
-       
+          {content?.title || "Harmen Dark"}
         </div>
 
-        {/* CTA Button */}
-        <Button 
-          variant="outline" 
+        <Button
+          variant="outline"
           size="default"
+          onClick={onViewWork}
           className="rounded-full border-white/30 text-white/80 hover:border-white/50 hover:text-white hover:bg-white/10 transition-all duration-300 font-light"
         >
           View Work
@@ -26,20 +31,20 @@ const Hero = ({ content }: { content?: HeroContent }) => {
         <div className="w-full pb-8 px-8 lg:pb-12 lg:px-12 mt-24">
           {/* Tagline */}
           <p className="text-white/60 text-sm font-light tracking-wide mb-6">
-            {content?.subtitle || "Crafting digital experiences that leave lasting impressions."}
+            {content?.subtitle || "Technical Lead · Distributed Systems · AI-Augmented Platforms"}
           </p>
 
           {/* Main Headlines */}
           <div className="mb-8">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-light leading-none text-white mb-2">
-              {content?.title || "Build the Future."}
+              {content?.title || "Harmen Dark"}
             </h1>
           </div>
 
           {/* Description Paragraph */}
           <div className="lg:max-w-md">
             <p className="text-white/70 font-light leading-relaxed">
-              {content?.description || "Where innovation meets artistry, I create immersive digital experiences that push boundaries. Every project is a journey from concept to reality, crafted with precision and passion."}
+              {content?.description || "Staff Software Engineer with 13+ years setting technical direction and owning distributed systems end-to-end at scale — Amazon, Xero, and five years running an independent consultancy."}
             </p>
           </div>
         </div>
